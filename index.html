@@ -5,33 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Invention</title>
 
-    <!-- css -->
-     <link rel="stylesheet" href="style.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
 
-    <!-- tailwind css cdn -->
+    <!-- Tailwind CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <!-- font cdn -->
+    <!-- GoogleFonts CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-
-
   </head>
   <body>
-    <nav class="flex justify-end p-8 mr-5 items-center font-semibold font-poppins">
-      <div class="flex gap-7">
-        <a href="">Home</a>
-        <a href="">Learn</a>
-        <a href="">Game</a>
-        <a href="">Contact</a>
-      </div>
-      <div class="flex flex-row gap-4">
-        
-      </div>
-    </nav>
+    <header>
+      <nav
+        class="max-w-[76rem] mx-auto flex justify-end p-9 items-center font-semibold gap-10 text-xl"
+      >
+        <div class="flex gap-9">
+          <a
+            href="#home"
+            class="hover:text-[#235599] transition duration-300 ease-in-out"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="hover:text-[#235599] transition duration-300 ease-in-out"
+            >Learn</a
+          >
+          <a
+            href="#"
+            class="hover:text-[#235599] transition duration-300 ease-in-out"
+            >Game</a
+          >
+          <a
+            href="#"
+            class="hover:text-[#235599] transition duration-300 ease-in-out"
+            >Contact</a
+          >
+        </div>
+
+        <div class="flex items-center gap-3">
+          <img src="assets/images/icon/people.png" alt="" class="w-[20px]" />
+          <span>Sabil</span>
+          <img src="assets/images/icon/line.svg" alt="" />
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section
+        id="home"
+        class="relative w-full min-h-screen text-[var(--white-100)]"
+      >
+        <img
+          src="assets/images/home/background.svg"
+          alt="background"
+          class="w-11/12 mx-auto"
+        />
+        <div class="absolute left-[10%] top-2/7 items-center">
+          <h1
+            class="font-bold text-4xl md:text-5xl text-center w-10/12 md:w-6/12"
+          >
+            Belajar dan Berkreasi Tanpa Batasan Suara
+          </h1>
+        </div>
+
+        <div
+          class="flex font-bold text-2xl w-[42%] bg-[var(--tertiary-color)] gap-8 p-4 mt-[-65px] items-center rounded-full ml-15"
+        >
+          <img
+            src="assets/images/icon/search.svg"
+            alt=""
+            class="w-[30px] ml-3"
+          />
+          <p>Apa yang ingin kamu jelajahi</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="flex justify-center items-center">
+          <h1 class="font-semibold md:text-4xl text-center w-10/12 md:w-6/12">
+            Apa itu
+            <span
+              class="bg-gradient-to-r from-[#3B8EFF] to-[#235599] bg-clip-text text-transparent"
+              >Teman Tanda</span
+            >?
+          </h1>
+          <div class="">
+            <div class=""></div>
+          </div>
+          <div class="">
+            <div class=""></div>
+          </div>
+          <div class="">
+            <div class=""></div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

@@ -1,12 +1,31 @@
 :root {
-    --font-poppins: 'Poppins', sans-serif;
+  --font-poppins: "Poppins", sans-serif;
 
-    --color-white-50: ;
+  --primary-color: #235599;
+  --secondary-color: #8ec3f7;
+  --tertiary-color: #efce1f;
+  --quaternary-color: #ffffff;
+  --gradient-color: linear-gradient(to right, #3B8EFF, #235599);
+
+  --white-50: #f9fafb;
+  --white-100: #f0f4ff;
+  --white-200: #dceaff;
+  --white-300: #c0ddff;
+  --white-400: #9ecaff;
+  --white-500: #6cb0ff;
+  --white-600: #3c91ff;
+  --white-700: #1c74e8;
+  --white-800: #155bbf;
+  --white-900: #0d3e8c;
+}
+
+* {
+    scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-
