@@ -5,7 +5,7 @@
   --secondary-color: #8ec3f7;
   --tertiary-color: #efce1f;
   --quaternary-color: #ffffff;
-  --gradient-color: linear-gradient(to right, #3B8EFF, #235599);
+  --gradient-color: linear-gradient(to right, #3b8eff, #235599);
 
   --white-50: #f9fafb;
   --white-100: #f0f4ff;
@@ -20,7 +20,7 @@
 }
 
 * {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -28,4 +28,59 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+.card {
+  height: 300px;
+  width: 200px;
+  cursor: pointer;
+  position: relative;
+  perspective: 900px;
+}
+
+.card > * {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.084);
+  transition: all 0.8s ease;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card.flip .frontCard {
+  transform: rotateY(-180deg);
+}
+
+.frontCard {
+  height: 100%;
+  background-image: url(assets/images/home/bluerectangle.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.images h1 {
+  color: white;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+.images img {
+  width: 150px;
+  padding: 10px;
+}
+
+.backCard {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/images/home/bluerectangle.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  transform: rotateY(180deg);
+  top: 0;
+  left: 0;
+}
+
+.card.flip .backCard {
+  transform: rotateY(0deg);
 }
