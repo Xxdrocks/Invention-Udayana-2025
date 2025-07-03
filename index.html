@@ -6,7 +6,7 @@
     <title>Invention</title>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- Tailwind CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -299,31 +299,90 @@
           </div>
         </div>
 
-        <div class="flex justify-center">       
+        <div class="flex justify-center">
           <div class="flex flex-col gap-10">
             <div class="mx-auto">
-              <img src="assets/images/home/longrectangle.svg" alt="">
+              <img src="assets/images/home/longrectangle.svg" alt="" />
             </div>
             <div class="grid grid-cols-2 gap-10">
               <div class="">
-                <img src="assets/images/home/lightbluerectangle.svg" alt="">
+                <img src="assets/images/home/lightbluerectangle.svg" alt="" />
               </div>
               <div class="">
-                <img src="assets/images/home/lightbluerectangle.svg" alt="">
+                <img src="assets/images/home/lightbluerectangle.svg" alt="" />
               </div>
               <div class="">
-                <img src="assets/images/home/lightbluerectangle.svg" alt="">
+                <img src="assets/images/home/lightbluerectangle.svg" alt="" />
               </div>
               <div class="">
-                <img src="assets/images/home/lightbluerectangle.svg" alt="">
+                <img src="assets/images/home/lightbluerectangle.svg" alt="" />
               </div>
             </div>
           </div>
         </div>
-        
       </section>
+
+      <section>
+        <div class="my-50">
+          <div
+            class="mx-auto p-2 bg-[#ffffff] w-7/12 rounded-2xl text-center text-center font-semibold text-4xl mb-[-30px] relative"
+          >
+            <h1 class="text-center">Bagaimana Perasaan Teman Saat ini</h1>
+          </div>
+          <div class="max-w-5xl mx-auto overflow-hidden h-3/5 justify-center rounded-3xl">
+            <div class="">
+              <canvas id="canvas" class="block bg-[var(--primary-color)]">
+              </canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="w-full py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">
+      Apa yang <span class="text-blue-500">Teman</span> rasakan?
+    </h2>
+
+    <!-- Carousel container -->
+    <div id="carousel" class="flex gap-6 overflow-x-auto scroll-smooth no-scrollbar">
+      <!-- Card -->
+      <div class="flex-shrink-0 bg-gray-100 w-72 p-5 rounded-xl shadow-md transform rotate-[-3deg] hover:rotate-0 transition duration-300">
+        <p class="font-semibold mb-2">dolor sit amet</p>
+        <div class="text-yellow-400 mb-2">★★★★★</div>
+        <p class="text-sm text-gray-700">Cras varius suscipit libero.</p>
+      </div>
+
+      <div class="flex-shrink-0 bg-gray-100 w-72 p-5 rounded-xl shadow-md transform rotate-[2deg] hover:rotate-0 transition duration-300">
+        <p class="font-semibold mb-2">dolor sit amet</p>
+        <div class="text-yellow-400 mb-2">★★★★★</div>
+        <p class="text-sm text-gray-700">Cras varius suscipit libero.</p>
+      </div>
+
+      <div class="flex-shrink-0 bg-gray-100 w-72 p-5 rounded-xl shadow-md transform rotate-[-2deg] hover:rotate-0 transition duration-300">
+        <p class="font-semibold mb-2">dolor sit amet</p>
+        <div class="text-yellow-400 mb-2">★★★★★</div>
+        <p class="text-sm text-gray-700">Cras varius suscipit libero.</p>
+      </div>
+
+      <div class="flex-shrink-0 bg-gray-100 w-72 p-5 rounded-xl shadow-md transform rotate-[3deg] hover:rotate-0 transition duration-300">
+        <p class="font-semibold mb-2">dolor sit amet</p>
+        <div class="text-yellow-400 mb-2">★★★★★</div>
+        <p class="text-sm text-gray-700">Cras varius suscipit libero.</p>
+      </div>
+
+      <!-- Duplikat untuk loop -->
+      <div class="flex-shrink-0 bg-gray-100 w-72 p-5 rounded-xl shadow-md transform rotate-[-3deg] hover:rotate-0 transition duration-300">
+        <p class="font-semibold mb-2">dolor sit amet</p>
+        <div class="text-yellow-400 mb-2">★★★★★</div>
+        <p class="text-sm text-gray-700">Cras varius suscipit libero.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
     </main>
 
-    <script src="main.js"></script>
+    <script src="javascript/main.js"></script>
   </body>
 </html>
