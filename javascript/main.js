@@ -7,16 +7,16 @@ document.querySelectorAll('.card').forEach(card => {
 });
 
 
-//
+//Bagaimana Perasaan Teman Saat ini
 
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.height = 380;
 
-const tags = ["Energy", "Creativity", "Free-Thinker"];
-const colors = ["#8ec3f7", "#efce1f"];
+const tags = ["Malu", "Cemas", "Sedih", "Senang", "Marah",  "FOMO", "Bosan", "Pusing", "Takut"];
+const colors = ["#E366B4", "#ED9A3B", "#5998D0", "#F3CB3D", "#E14646", "#36D7C1", "#7C75D4", "#7FC057", "#BF87D9"];
 const particles = [];
 
 let draggingTag = null;
@@ -25,16 +25,23 @@ let offsetY = 0;
 
 class Tag {
   constructor(text) {
-    this.text = text;
-    this.x = Math.random() * canvas.width;
-    this.y = -Math.random() * 300;
-    this.vx = (Math.random() - 0.5) * 2;
-    this.vy = 0;
-    this.width = ctx.measureText(text).width + 60;
-    this.height = 40;
-    this.color = colors[Math.floor(Math.random() * colors.length)];
-    this.dragging = false;
-  }
+  this.text = text;
+  this.x = Math.random() * canvas.width;
+  this.y = -Math.random() * 300;
+  this.vx = (Math.random() - 0.5) * 2;
+  this.vy = 0;
+  this.color = colors[tags.indexOf(text)];
+  this.dragging = false;
+  this.angle = (Math.random() - 0.5) * 0.2; 
+
+  ctx.font = "bold 20px Poppins";
+  const textMetrics = ctx.measureText(text);
+  const paddingX = 30;
+  const paddingY = 10;
+
+  this.width = textMetrics.width + paddingX * 2;
+  this.height = 20 + paddingY * 2;
+}
 
   draw() {
     ctx.fillStyle = this.color;
@@ -42,7 +49,7 @@ class Tag {
     ctx.roundRect(this.x, this.y, this.width, this.height, 20);
     ctx.fill();
     ctx.fillStyle = "#f0f4ff";
-    ctx.font = "20px Poppins";
+    ctx.font = "bold 20px Poppins";
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
     ctx.fillText(this.text, this.x + this.width / 2, this.y + this.height / 2);
@@ -107,6 +114,9 @@ canvas.addEventListener("mousedown", (e) => {
 
   for (let p of particles) {
     if (p.isMouseInside(mx, my)) {
+
+      canvas.style.background = p.color;
+
       draggingTag = p;
       p.dragging = true;
       offsetX = mx - p.x;
@@ -115,6 +125,7 @@ canvas.addEventListener("mousedown", (e) => {
     }
   }
 });
+
 
 canvas.addEventListener("mousemove", (e) => {
   if (draggingTag) {
@@ -170,3 +181,5 @@ const handleMouseMove = e => {
 for(const box of document.querySelectorAll('.box')) {
   box.onmousemove = e => handleMouseMove(e);
 }
+
+

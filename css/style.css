@@ -6,7 +6,8 @@
   --tertiary-color: #efce1f;
   --quaternary-color: #ffffff;
   --gradient-color: linear-gradient(to right, #3b8eff, #235599);
-
+  
+  --gray: #d9d9d9;
   --white-50: #f9fafb;
   --white-100: #f0f4ff;
   --white-200: #dceaff;
