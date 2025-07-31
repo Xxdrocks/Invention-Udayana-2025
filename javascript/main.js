@@ -15,8 +15,8 @@ const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = 380;
 
-const tags = ["Malu", "Cemas", "Sedih", "Senang", "Marah",  "FOMO", "Bosan", "Pusing", "Takut"];
-const colors = ["#E366B4", "#ED9A3B", "#5998D0", "#F3CB3D", "#E14646", "#36D7C1", "#7C75D4", "#7FC057", "#BF87D9"];
+const tags = ["Malu", "Cemas", "Sedih", "Senang", "Marah", "Bosan", "Pusing", "Takut"];
+const colors = ["#E366B4", "#ED9A3B", "#5998D0", "#F3CB3D", "#E14646", "#7C75D4", "#7FC057", "#BF87D9"];
 const particles = [];
 
 let draggingTag = null;
@@ -36,8 +36,8 @@ class Tag {
 
   ctx.font = "bold 20px Poppins";
   const textMetrics = ctx.measureText(text);
-  const paddingX = 30;
-  const paddingY = 10;
+  const paddingX = 50;
+  const paddingY = 15;
 
   this.width = textMetrics.width + paddingX * 2;
   this.height = 20 + paddingY * 2;
@@ -49,7 +49,7 @@ class Tag {
     ctx.roundRect(this.x, this.y, this.width, this.height, 20);
     ctx.fill();
     ctx.fillStyle = "#f0f4ff";
-    ctx.font = "bold 20px Poppins";
+    ctx.font = "bold 25px Poppins";
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
     ctx.fillText(this.text, this.x + this.width / 2, this.y + this.height / 2);
@@ -146,40 +146,5 @@ canvas.addEventListener("mouseup", () => {
 
 init();
 animate();
-
-
-const carousel = document.getElementById('carousel');
-
-let scrollAmount = 0;
-const scrollStep = 1;
-const speed = 20; // kecepatan scroll (ms)
-
-function autoScroll() {
-  scrollAmount += scrollStep;
-  if (scrollAmount >= carousel.scrollWidth / 2) {
-    scrollAmount = 0;
-    carousel.scrollLeft = 0;
-  } else {
-    carousel.scrollLeft += scrollStep;
-  }
-  requestAnimationFrame(autoScroll);
-}
-
-autoScroll();
-
-const handleMouseMove = e => {
-  const {currentTarget: target } = e;
-
-  const rect = target.getBoundingClientRect(),
-   x = e.clientX - rect.left,
-   y = e.clientY - rect.top;
-
-   target.style.setProperty('--mouse-x', `${x}px`);
-   target.style.setProperty('--mouse-y', `${y}px`);
-}
-
-for(const box of document.querySelectorAll('.box')) {
-  box.onmousemove = e => handleMouseMove(e);
-}
 
 
