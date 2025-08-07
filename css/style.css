@@ -20,6 +20,8 @@
   --white-900: #0d3e8c;
 }
 
+
+
 * {
   scroll-behavior: smooth;
   scrollbar-width: none;
@@ -154,6 +156,11 @@ body {
 
 .card.flip .backCard {
   transform: rotateY(0deg);
+}
+
+.glassy {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 /* .heroBox::before {

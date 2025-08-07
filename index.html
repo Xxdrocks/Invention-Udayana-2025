@@ -22,27 +22,28 @@
 
 <body>
   <header>
-    <nav
-      class="z-10 w-full mx-auto flex justify-end p-9 items-center font-semibold gap-10 text-xl bg-[var(--white-50)]">
-      <div class="flex gap-9">
-        <a href="#home" class="hover:text-[#235599] transition duration-300 ease-in-out">Home</a>
-        <a href="#learn" class="hover:text-[#235599] transition duration-300 ease-in-out">Learn</a>
-        <a href="#game" class="hover:text-[#235599] transition duration-300 ease-in-out">Game</a>
-        <a href="#footer" class="hover:text-[#235599] transition duration-300 ease-in-out">Contact</a>
-      </div>
+    <nav class="fixed z-20 font-poppins font-semibold right-0 bg-[#ebebeb7c] m-6 rounded-full glassy">
+      <div class="flex gap-10 py-2 px-5 ">
+        <div class="flex gap-9">
+          <a href="#home" class="hover:text-[#235599] transition duration-300 ease-in-out">Home</a>
+          <a href="#learn" class="hover:text-[#235599] transition duration-300 ease-in-out">Learn</a>
+          <a href="#game" class="hover:text-[#235599] transition duration-300 ease-in-out">Game</a>
+          <a href="#footer" class="hover:text-[#235599] transition duration-300 ease-in-out">Contact</a>
+        </div>
 
-      <div class="flex items-center gap-3">
-        <img src="assets/images/icon/people.png" alt="" class="w-[20px]" />
-        <span>Sabil</span>
-        <img src="assets/images/icon/line.svg" alt="" />
+        <div class="flex items-center gap-3">
+          <img src="assets/images/icon/people.png" alt="" class="w-[20px]" />
+          <span>Sabil</span>
+        </div>
       </div>
     </nav>
   </header>
 
-  <main>
+  <main class="pt-20">
     <section id="home" class="relative w-full min-h-screen text-[var(--white-100)]">
       <div class="relative ">
-        <img src="assets/images/home/background.svg" alt="Background dekoratif" class="w-11/12 mx-auto " />
+        <img src="assets/images/home/background.svg" alt="Background blue" class="md:flex xl:flex w-11/12 mx-auto hidden" />
+        <img src="assets/images/home/mobile-background.svg" alt="" class="flex md:hidden xl:hidden">
         <div
           class="absolute top-[-1rem] left-1/2 -translate-x-1/2 flex flex-col md:flex-row items-center justify-center w-full gap-4 px-4">
           <h1 class="font-bold text-center mx-4  text-2xl md:text-4xl leading-normal typeAnimation">
@@ -142,8 +143,9 @@
 
         <div class="flex">
           <div class="w-9/12 h-max px-10 my-auto">
-            <iframe class="xl:w-[560px] md:w-[360px]" width="560" height="339" src="https://www.youtube.com/embed/K_XSMFfy5gU?si=5pQ2i2I9hkKPrXpw"
-              title="YouTube video player" frameborder="0" style="border-radius: 25px;"
+            <iframe class="xl:w-[560px] md:w-[360px]" width="560" height="339"
+              src="https://www.youtube.com/embed/K_XSMFfy5gU?si=5pQ2i2I9hkKPrXpw" title="YouTube video player"
+              frameborder="0" style="border-radius: 25px;"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
@@ -171,9 +173,11 @@
         </div>
       </div>
 
-      <div class="flex flex-col md:grid grid-cols-2 gap-7 py-8 md:max-w-4xl xl:max-w-6xl mx-auto">
+      <div class="flex flex-col md:grid grid-cols-2 gap-7 py-8 md:max-w-4xl xl:max-w-6xl mx-auto" id="contents">
         <div class="">
-          <img src="assets/images/home/midrectangle.svg" alt="" class="w-full mx-auto" />
+          <a href="./pages/kamus.html">
+            <img src="assets/images/home/midrectangle.svg" alt="" class="w-full mx-auto" />
+          </a>
         </div>
         <div class="">
           <img src="assets/images/home/midrectangle.svg" alt="" class="w-full mx-auto" />
@@ -298,7 +302,8 @@
             <p class="text-sm">TemanTanda sangat membantu saya belajar bahasa isyarat dengan mudah. Visual dan videonya
               interaktif banget!</p>
           </div>
-          <div class="ratingCard bg-[var(--gray)] rounded-xl w-[280px] h-auto flex-shrink-0 p-5 flex flex-col justify-center gap-2">
+          <div
+            class="ratingCard bg-[var(--gray)] rounded-xl w-[280px] h-auto flex-shrink-0 p-5 flex flex-col justify-center gap-2">
             <div class="">
               <img src="assets/images/card/person/client2.jpeg" alt="" class="rounded-full w-10 aspect-square bg-white">
             </div>
@@ -325,7 +330,8 @@
               <img src="assets/images/card/star.png" alt="">
               <img src="assets/images/card/star.png" alt="">
             </div>
-            <p class="text-sm">Sebagai orang tua anak tunarungu, saya terbantu banget dengan kamus isyaratnya. Sangat informatif dan ramah pengguna.</p>
+            <p class="text-sm">Sebagai orang tua anak tunarungu, saya terbantu banget dengan kamus isyaratnya. Sangat
+              informatif dan ramah pengguna.</p>
           </div>
           <div
             class="ratingCard bg-[var(--gray)] rounded-xl w-[280px] h-auto flex-shrink-0 p-5 flex flex-col justify-center gap-2">
@@ -340,7 +346,8 @@
               <img src="assets/images/card/star.png" alt="">
               <img src="assets/images/card/star.png" alt="">
             </div>
-            <p class="text-sm">Komunitasnya positif banget. Saya bisa berbagi pengalaman dan saling belajar dengan pengguna lain.</p>
+            <p class="text-sm">Komunitasnya positif banget. Saya bisa berbagi pengalaman dan saling belajar dengan
+              pengguna lain.</p>
           </div>
           <div
             class="ratingCard bg-[var(--gray)] rounded-xl w-[280px] h-autos flex-shrink-0 p-5 flex flex-col justify-center gap-2">
@@ -370,7 +377,8 @@
               <img src="assets/images/card/star.png" alt="">
               <img src="assets/images/card/star.png" alt="">
             </div>
-            <p class="text-sm">Website ini bukti bahwa inklusivitas bisa diwujudkan lewat teknologi. Terima kasih TemanTanda!</p>
+            <p class="text-sm">Website ini bukti bahwa inklusivitas bisa diwujudkan lewat teknologi. Terima kasih
+              TemanTanda!</p>
           </div>
 
 
