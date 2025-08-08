@@ -128,7 +128,7 @@ body {
   overflow: hidden;
 }
 
-.card.flip .frontCard {
+.card:hover .frontCard {
   transform: rotateY(-180deg);
 }
 
@@ -154,7 +154,7 @@ body {
   left: 0;
 }
 
-.card.flip .backCard {
+.card:hover .backCard {
   transform: rotateY(0deg);
 }
 

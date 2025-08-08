@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body>
+    <div class="m-5">
+        <button onclick="window.location.href = '../index.html#contents'"
+            class="flex text-center items-center font-poppins font-semibold gap-2 cursor-pointer">
+            <img src="../assets/images/icon/arrow-left.png" alt="" class="w-[10px]" />
+            <h1>Kembali</h1>
+        </button>
+    </div>
+
+
+    <section id="game">
+        <div class="flex p-15">
+            <div class="flex font-semibold items-center text-4xl gap-5">
+                <img src="../assets/images/icon/brain.svg" alt="" class="w-[60px]" />
+                <h1>Flash Card</h1>
+            </div>
+        </div>
+
+        <div class="flex gap-10 mx-auto justify-center">
+            <div class="card">
+                <div class="frontCard">
+                    <img src="../assets/images/card/game/front/s.png" alt="">
+                </div>
+                <div class="backCard">
+                    <img src="../assets/images/card/game/back/s.png" alt="">
+                </div>
+            </div>
+            <div class="card">
+                <div class="frontCard">
+                    <img src="../assets/images/card/game/front/menolak.png" alt="">
+                </div>
+                <div class="backCard">
+                    <img src="../assets/images/card/game/back/menolak.png" alt="">
+                </div>
+            </div>
+            <div class="card">
+                <div class="frontCard">
+                    <img src="../assets/images/card/game/front/p.png" alt="">
+                </div>
+                <div class="backCard">
+                    <img src="../assets/images/card/game/back/p.png" alt="">
+                </div>
+            </div>
+            <div class="card">
+                <div class="frontCard">
+                    <img src="../assets/images/card/game/front/berjanji.png" alt="">
+                </div>
+                <div class="backCard">
+                    <img src="../assets/images/card/game/back/berjanji.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="flex p-15">
+            <div class="flex font-semibold items-center text-4xl gap-5">
+                <img src="../assets/images/icon/lamp.svg" alt="" class="w-[60px]" />
+                <h1>Quick Quiz</h1>
+            </div>
+        </div>
+
+        <div class="flex justify-center">
+            <div class="flex flex-col gap-10">
+                <div
+                    class="mx-auto flex justify-center bg-gradient-to-b from-[#3B8EFF] to-[#235599] w-9/12 rounded-2xl">
+                    <img src="../assets/hand-sign/a.png" alt="" class="-mt-35 w-[20rem]">
+                </div>
+                <div class="flex flex-wrap gap-3">
+                    <div
+                        class="glassy bg-[var(--white-400)] w-[48%] flex justify-center text-white font-semibold rounded-lg p-1">
+                        M
+                    </div>
+                    <div
+                        class="glassy bg-[var(--white-400)] w-[48%] flex justify-center text-white font-semibold rounded-lg p-1">
+                        M
+                    </div>
+                    <div
+                        class="glassy bg-[var(--white-400)] w-[48%] flex justify-center text-white font-semibold rounded-lg p-1">
+                        M
+                    </div>
+                    <div
+                        class="glassy bg-[var(--white-400)] w-[48%] flex justify-center text-white font-semibold rounded-lg p-1">
+                        M
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
