@@ -20,29 +20,32 @@ let offsetY = 0;
 
 class Tag {
   constructor(text) {
-  this.text = text;
-  this.x = Math.random() * canvas.width;
-  this.y = -Math.random() * 300;
-  this.vx = (Math.random() - 0.5) * 2;
-  this.vy = 0;
-  this.color = colors[tags.indexOf(text)];
-  this.dragging = false;
-  this.angle = (Math.random() - 0.5) * 0.2; 
+    this.text = text;
+    this.x = Math.random() * canvas.width;
+    this.y = -Math.random() * 300;
+    this.vx = (Math.random() - 0.5) * 2;
+    this.vy = 0;
+    this.color = colors[tags.indexOf(text)];
+    this.dragging = false;
+    this.angle = (Math.random() - 0.5) * 0.2;
 
-  ctx.font = "bold 20px Poppins";
-  const textMetrics = ctx.measureText(text);
-  const paddingX = 50;
-  const paddingY = 15;
+    ctx.font = "bold 20px Poppins";
+    const textMetrics = ctx.measureText(text);
+    const paddingX = 50;
+    const paddingY = 15;
 
-  this.width = textMetrics.width + paddingX * 2;
-  this.height = 20 + paddingY * 2;
-}
+    this.width = textMetrics.width + paddingX * 2;
+    this.height = 20 + paddingY * 2;
+  }
 
   draw() {
     ctx.fillStyle = this.color;
     ctx.beginPath();
     ctx.roundRect(this.x, this.y, this.width, this.height, 20);
     ctx.fill();
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = "#ffffff";
+    ctx.stroke();
     ctx.fillStyle = "#f0f4ff";
     ctx.font = "bold 25px Poppins";
     ctx.textAlign = "center";
@@ -64,10 +67,57 @@ class Tag {
       if (this.x <= 0 || this.x + this.width >= canvas.width) {
         this.vx *= -1;
       }
+
+      for (let other of particles) {
+        if (other !== this && this.isColliding(other)) {
+          const overlapX = Math.min(
+            this.x + this.width - other.x,
+            other.x + other.width - this.x
+          );
+          
+          const overlapY = Math.min(
+            this.y + this.height - other.y,
+            other.y + other.height - this.y
+          );
+
+          if (overlapX < overlapY) {
+            if (this.x < other.x) {
+              this.x -= overlapX / 2;
+              other.x += overlapX / 2;
+            } else {
+              this.x += overlapX / 2;
+              other.x -= overlapX / 2;
+            }
+            this.vx *= -0.2;
+            other.vx *= -0.2;
+          } else {
+            if (this.y < other.y) {
+              this.y -= overlapY / 2;
+              other.y += overlapY / 2;
+            } else {
+              this.y += overlapY / 2;
+              other.y -= overlapY / 2;
+            }
+            this.vy *= -0.2;
+            other.vy *= -0.2;
+          }
+        }
+      }
+
     }
 
     this.draw();
   }
+
+  isColliding(other) {
+    return (
+      this.x < other.x + other.width &&
+      this.x + this.width > other.x &&
+      this.y < other.y + other.height &&
+      this.y + this.height > other.y
+    );
+  }
+
 
   isMouseInside(mx, my) {
     return mx >= this.x && mx <= this.x + this.width && my >= this.y && my <= this.y + this.height;
