@@ -163,6 +163,13 @@ body {
   -webkit-backdrop-filter: blur(20px);
 }
 
+.chatBackground {
+  background-image: url(/assets/images/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /* .heroBox::before {
   background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgb(255, 0, 0), transparent 40%);
   content: "";

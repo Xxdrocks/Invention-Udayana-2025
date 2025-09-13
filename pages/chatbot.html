@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teman Cerita</title>
+
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="chatBackground h-screen flex flex-col">
+
+  <!-- Tombol kembali -->
+  <a href="/index.html#contents" class="flex items-center gap-3 p-6">
+    <img src="/assets/images/icon/arrow-left.png" alt="back" class="w-3 h-auto cursor-pointer">
+    <h1 class="font-semibold cursor-pointer">Kembali</h1>
+  </a>
+
+  <!-- Pertanyaan -->
+  <div class="absolute flex flex-col left-0 right-0 top-10 items-center text-center">
+    <div class="mb-4">
+      <img src="/assets/images/icon/logo.png" alt="logo" class="w-8 mx-auto">
+    </div>
+    <h1 class="font-semibold tracking-wide text-xl">Bagaimana hari mu hari ini?</h1>
+  </div>
+
+  <!-- Chatbox -->
+  <div id="chatBox" class="flex flex-col gap-3 px-8 mt-6 overflow-y-auto max-h-[800px] flex-1"></div>
+
+  <!-- Pilihan mood -->
+  <div class="flex flex-col items-center mt-4 gap-4">
+    <h2 class="text-gray-700 font-medium">Ceritakan mood mu hari ini</h2>
+    <div class="flex flex-wrap justify-center gap-4">
+      <button class="moodBtn bg-white px-5 py-2 rounded-full shadow hover:bg-blue-50"
+        data-question="saya merasa senang hari ini">Saya merasa senang hari ini</button>
+      <button class="moodBtn bg-white px-5 py-2 rounded-full shadow hover:bg-blue-50"
+        data-question="saya sangat sedih hari ini">Saya sangat sedih hari ini :(</button>
+      <button class="moodBtn bg-white px-5 py-2 rounded-full shadow hover:bg-blue-50"
+        data-question="saya merasa gelisah dan bingung">Saya merasa gelisah dan bingung</button>
+    </div>
+  </div>
+
+  <!-- Input box -->
+  <div class="pt-5 flex justify-center pb-5">
+    <div class="flex items-center bg-white rounded-2xl shadow-md px-5 py-3 w-[900px]">
+      <input id="chatInput" type="text" placeholder="Ceritakan perasaan mu saat ini"
+        class="flex-1 text-gray-700 placeholder-gray-400 focus:outline-none">
+
+      <button id="sendBtn" class="ml-3 hover:opacity-70">
+        <img src="/assets/images/icon/send.png" alt="send" class="w-6">
+      </button>
+    </div>
+  </div>
+
+  <!-- Script eksternal -->
+  <script src="/javascript/dataset.js"></script>
+</body>
+</html>

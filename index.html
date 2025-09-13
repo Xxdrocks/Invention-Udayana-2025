@@ -21,15 +21,18 @@
 </head>
 
 <body>
+
+  <!-- Navbar STart -->
+
   <header>
     <img src="assets/images/home/logo.png" alt="" class="absolute w-[170px] top-7 left-15">
     <nav class="fixed z-20 font-poppins font-semibold right-0 bg-[#ebebeb7c] m-6 rounded-full glassy">
       <div class="flex gap-10 py-2 px-5 ">
         <div class="flex gap-9">
-          <a href="#home" class="hover:text-[#235599] transition duration-300 ease-in-out">Home</a>
-          <a href="#learn" class="hover:text-[#235599] transition duration-300 ease-in-out">Learn</a>
-          <a href="#game" class="hover:text-[#235599] transition duration-300 ease-in-out">Game</a>
-          <a href="#footer" class="hover:text-[#235599] transition duration-300 ease-in-out">Contact</a>
+          <a href="#home" class="hover:text-[#235599] transition duration-300 ease-in-out">Beranda</a>
+          <a href="#learn" class="hover:text-[#235599] transition duration-300 ease-in-out">Edukasi</a>
+          <a href="#game" class="hover:text-[#235599] transition duration-300 ease-in-out">Permainan</a>
+          <a href="#footer" class="hover:text-[#235599] transition duration-300 ease-in-out">Kontak</a>
         </div>
 
         <div class="flex items-center gap-3">
@@ -39,6 +42,10 @@
       </div>
     </nav>
   </header>
+
+  <!-- Navbar End -->
+
+  <!-- Home Start -->
 
   <main class="pt-20">
     <section id="home" class="relative w-full min-h-screen text-[var(--white-100)]">
@@ -64,8 +71,11 @@
           <p class="searchLabel">Apa yang ingin kamu jelajahi?</p>
         </div>
       </div>
-
     </section>
+
+    <!-- Home End -->
+
+    <!-- Learn Start -->
 
     <section>
       <div class="flex flex-col items-center text-center">
@@ -84,7 +94,7 @@
               <h2 class="font-semibold text-2xl text-[var(--primary-color)] py-3">
                 Kamus Isyarat
               </h2>
-              <p class="text-[var(--quaternary-color)] text-lg">
+              <p class="text-[var(--quaternary-color)] fontsize-[14px]">
                 Jelajahi ribuan kosakata bahasa isyarat dengan gambar & video interaktif.
               </p>
             </div>
@@ -96,7 +106,7 @@
               <h2 class="font-semibold text-2xl text-[var(--secondary-color)] py-3">
                 Ruang Belajar & Quiz
               </h2>
-              <p class="text-[var(--quaternary-color)] text-lg">
+              <p class="text-[var(--quaternary-color)] fontsize-[14px]">
                 Tonton video pembelajaran, lalu uji kemampuanmu lewat kuis seru & flashcard. </p>
             </div>
           </div>
@@ -107,7 +117,7 @@
               <h2 class="font-semibold text-2xl text-[var(--primary-color)] py-2">
                 Teman Bercerita
               </h2>
-              <p class="text-[var(--quaternary-color)] text-lg">
+              <p class="text-[var(--quaternary-color)] fontsize-[14px]">
                 Ekspresikan dirimu lewat papan interaktif dan bagikan cerita bersama AI bot yang siap mendengarkan di
                 TemanTanda. </p>
             </div>
@@ -140,8 +150,8 @@
             </span> dapat mengeksplor bahasa isyarat internasional yang digunakan di
             berbagai belahan dunia!
           </p>
-          <button onclick="window.location.href = 'learn.html'"
-            class="my-7 px-5 py-1 font-semibold bg-gradient-to-b from-[#3B8EFF] to-[#235599] text-white rounded-full">
+          <button onclick="window.location.href = '#footer'"
+            class="my-7 px-5 py-1 font-semibold bg-gradient-to-b from-[#3B8EFF] to-[#235599] text-white rounded-full cursor-pointer">
             view more
           </button>
         </div>
@@ -178,9 +188,15 @@
         </div>
       </div>
 
+      <!-- Learn End -->
+
+
+
+      <!-- Game Start -->
+
       <div class="flex flex-col md:grid grid-cols-2 gap-7 py-8 md:max-w-4xl xl:max-w-6xl mx-auto" id="contents">
         <div class="">
-          <a href="">
+          <a href="./pages/chatbot.html">
             <img src="assets/images/home/Cover/Teman.png" alt="" class="w-full mx-auto rounded-3xl" />
           </a>
         </div>
@@ -193,11 +209,17 @@
           <img src="assets/images/home/Cover/Bantuan.png" alt="" class="w-full mx-auto rounded-3xl" />
         </div>
         <div class="">
-          <img src="assets/images/home/Cover/Misi.png" alt="" class="w-full mx-auto rounded-3xl" />
+          <a href="./pages/quiz.html">
+            <img src="assets/images/home/Cover/Misi.png" alt="" class="w-full mx-auto rounded-3xl" />
+          </a>
         </div>
       </div>
     </section>
 
+    <!-- Game End -->
+
+
+    <!--  -->
 
     <section>
       <div class="my-50">
@@ -220,15 +242,15 @@
           Apa yang <span class="text-blue-500">Teman</span> rasakan?
         </h2>
 
-        <div id="rating" class="flex gap-10 overflow-x-auto py-20 h-auto scroll-smooth select-none">
+        <div id="rating" class="flex gap-10 overflow-x-auto overflow-y-hidden py-20 h-115 scroll-smooth select-none">
           <div
-            class="ratingCard bg-gradient-to-b from-[#3B8EFF] to-[#235599] rounded-xl w-[350px] h-auto flex-shrink-0 p-5 justify-center flex flex-col gap-8 text-white font-medium">
+            class="ratingCard bg-gradient-to-b from-[#3B8EFF] to-[#235599] rounded-xl w-[350px] h-50 flex-shrink-0 p-5 justify-center flex flex-col gap-8 text-white font-medium">
             <div class="flex flex-row gap-5">
-              <img src="assets/images/card/person/client1.jpeg" alt=""
+              <img src="assets/images/card/person/client2.jpeg" alt=""
                 class="rounded-full w-[50px] aspect-square bg-white">
-              <div class="flex flex-col items-center">
-                <div class="font-bold">Risky Saputra</div>
-                <div class="flex">
+              <div class="flex flex-col items-start">
+                <h1 class="font-bold text-lg">Andi</h1>
+                <div class="flex flex-row">
                   <img src="assets/images/card/star.png" alt="">
                   <img src="assets/images/card/star.png" alt="">
                   <img src="assets/images/card/star.png" alt="">
@@ -241,13 +263,13 @@
               interaktif banget!</p>
           </div>
           <div
-            class="ratingCard bg-gradient-to-b from-[#3B8EFF] to-[#235599] rounded-xl w-[350px] h-auto flex-shrink-0 p-5 justify-center flex flex-col gap-8 text-white font-medium">
+            class="ratingCard bg-gradient-to-b from-[#3B8EFF] to-[#235599] rounded-xl w-[350px] h-50 flex-shrink-0 p-5 justify-center flex flex-col gap-8 text-white font-medium">
             <div class="flex flex-row gap-5">
-              <img src="assets/images/card/person/client1.jpeg" alt=""
+              <img src="assets/images/card/person/client2.jpeg" alt=""
                 class="rounded-full w-[50px] aspect-square bg-white">
-              <div class="flex flex-col items-center">
-                <div class="font-bold">Risky Saputra</div>
-                <div class="flex">
+              <div class="flex flex-col items-start">
+                <h1 class="font-bold text-lg">Andi</h1>
+                <div class="flex flex-row">
                   <img src="assets/images/card/star.png" alt="">
                   <img src="assets/images/card/star.png" alt="">
                   <img src="assets/images/card/star.png" alt="">
@@ -260,13 +282,13 @@
               interaktif banget!</p>
           </div>
           <div
-            class="ratingCard bg-gradient-to-b from-[#3B8EFF] to-[#235599] rounded-xl w-[350px] h-auto flex-shrink-0 p-5 justify-center flex flex-col gap-8 text-white font-medium">
+            class="ratingCard bg-gradient-to-b from-[#3B8EFF] to-[#235599] rounded-xl w-[350px] h-50 flex-shrink-0 p-5 justify-center flex flex-col gap-8 text-white font-medium">
             <div class="flex flex-row gap-5">
-              <img src="assets/images/card/person/client1.jpeg" alt=""
+              <img src="assets/images/card/person/client2.jpeg" alt=""
                 class="rounded-full w-[50px] aspect-square bg-white">
-              <div class="flex flex-col items-center">
-                <div class="font-bold">Risky Saputra</div>
-                <div class="flex">
+              <div class="flex flex-col items-start">
+                <h1 class="font-bold text-lg">Andi</h1>
+                <div class="flex flex-row">
                   <img src="assets/images/card/star.png" alt="">
                   <img src="assets/images/card/star.png" alt="">
                   <img src="assets/images/card/star.png" alt="">
@@ -279,13 +301,13 @@
               interaktif banget!</p>
           </div>
           <div
-            class="ratingCard bg-gradient-to-b from-[#3B8EFF] to-[#235599] rounded-xl w-[350px] h-auto flex-shrink-0 p-5 justify-center flex flex-col gap-8 text-white font-medium">
+            class="ratingCard bg-gradient-to-b from-[#3B8EFF] to-[#235599] rounded-xl w-[350px] h-50 flex-shrink-0 p-5 justify-center flex flex-col gap-8 text-white font-medium">
             <div class="flex flex-row gap-5">
-              <img src="assets/images/card/person/client1.jpeg" alt=""
+              <img src="assets/images/card/person/client2.jpeg" alt=""
                 class="rounded-full w-[50px] aspect-square bg-white">
-              <div class="flex flex-col items-center">
-                <div class="font-bold">Risky Saputra</div>
-                <div class="flex">
+              <div class="flex flex-col items-start">
+                <h1 class="font-bold text-lg">Andi</h1>
+                <div class="flex flex-row">
                   <img src="assets/images/card/star.png" alt="">
                   <img src="assets/images/card/star.png" alt="">
                   <img src="assets/images/card/star.png" alt="">
@@ -298,13 +320,13 @@
               interaktif banget!</p>
           </div>
           <div
-            class="ratingCard bg-gradient-to-b from-[#3B8EFF] to-[#235599] rounded-xl w-[350px] h-auto flex-shrink-0 p-5 justify-center flex flex-col gap-8 text-white font-medium">
+            class="ratingCard bg-gradient-to-b from-[#3B8EFF] to-[#235599] rounded-xl w-[350px] h-50 flex-shrink-0 p-5 justify-center flex flex-col gap-8 text-white font-medium">
             <div class="flex flex-row gap-5">
-              <img src="assets/images/card/person/client1.jpeg" alt=""
+              <img src="assets/images/card/person/client2.jpeg" alt=""
                 class="rounded-full w-[50px] aspect-square bg-white">
-              <div class="flex flex-col items-center">
-                <div class="font-bold">Risky Saputra</div>
-                <div class="flex">
+              <div class="flex flex-col items-start">
+                <h1 class="font-bold text-lg">Andi</h1>
+                <div class="flex flex-row">
                   <img src="assets/images/card/star.png" alt="">
                   <img src="assets/images/card/star.png" alt="">
                   <img src="assets/images/card/star.png" alt="">
@@ -316,25 +338,50 @@
             <p class="text-sm">TemanTanda sangat membantu saya belajar bahasa isyarat dengan mudah. Visual dan videonya
               interaktif banget!</p>
           </div>
+
         </div>
       </div>
     </section>
   </main>
 
   <footer id="footer">
-    <div class="bg-gradient-to-b from-[#3B8EFF] to-[#235599] h-300 mt-20 rounded-tl-4xl rounded-tr-4xl flex p-10 text-white justify-evenly">
-      <div class="flex flex-col gap-5">
-        <img src="assets/images/home/footer-logo.png" alt="" class="w-[300px]">
-        <p class="w-[70%]">platform edukasi dan komunikasi inklusif berbasis web yang menghadirkan kamus isyarat, ruang belajar
+    <div
+      class="bg-gradient-to-b from-[#3B8EFF] to-[#235599] rounded-tl-4xl rounded-tr-4xl flex gap-20 px-15 py-15 text-white justify-evenly">
+      <div class="flex flex-col gap-1 w-[85%]">
+        <img src="assets/images/home/footer-logo.png" alt="" class="w-[250px]">
+        <p class=" my-5">platform edukasi dan komunikasi inklusif berbasis web yang menghadirkan kamus isyarat, ruang
+          belajar
           interaktif, serta komunitas kolaboratif untuk mendukung teman non-verbal dalam belajar, berkreasi, dan
           berinteraksi tanpa batas suara.</p>
-      </div>
-      <div class="">
-          <h1 class="text-lg font-bold py-7">About Company</h1>
-          <p>Kami, tim dari SMK Negeri Mandiri 26 Jakarta, siap berinovasi dan berkompetisi di ajang Invention.</p>
-          <div class="">
+        <div class="flex items-center bg-white rounded-full py-1 shadow-md overflow-hidden w-[400px]">
+          <input type="email" placeholder="Masukan Email"
+            class="flex-1 px-4 py-1 text-sm text-gray-700 placeholder-gray-400 focus:outline-none">
+          <button
+            class=" mx-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white text-sm font-medium px-7 py-1 rounded-full hover:from-blue-600 hover:to-blue-700 transition">
+            Kirim
+          </button>
+        </div>
 
-          </div>
+      </div>
+
+      <div class="flex flex-col">
+        <h1 class="text-lg font-semibold my-5">About Company</h1>
+        <p class="text-sm font-light">Kami, tim dari SMK Negeri Mandiri 26 Jakarta, siap berinovasi dan berkompetisi di
+          ajang Invention.</p>
+        <div class="flex gap-2 py-4">
+          <a href="">
+            <img src="assets/images/icon/socialmedia/twitter.png" alt="" class="w-[30px]">
+          </a>
+          <a href="">
+            <img src="assets/images/icon/socialmedia/facebook.png" alt="" class="w-[30px]">
+          </a>
+          <a href="">
+            <img src="assets/images/icon/socialmedia/instagram.png" alt="" class="w-[30px]">
+          </a>
+          <a href="">
+            <img src="assets/images/icon/socialmedia/linkedin.png" alt="" class="w-[30px]">
+          </a>
+        </div>
       </div>
     </div>
   </footer>
