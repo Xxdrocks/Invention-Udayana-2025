@@ -487,27 +487,581 @@ const dataset = [
     "question": "namanya",
     "answer": "Ya penciptaku"
   },
+  {
+    "question": "Aku pengen tidur",
+    "answer": "Ayo kita istirahat dulu. Aku akan menemani sampai kamu tertidur."
+  },
+  {
+    "question": "Aku lapar",
+    "answer": "Mari kita makan dulu. Apa yang kamu inginkan? Nasi, roti, atau camilan?"
+  },
+  {
+    "question": "Gue bosen",
+    "answer": "Bosen itu wajar. Mari kita lakukan kegiatan baru, seperti menggambar atau bermain bersama."
+  },
+  {
+    "question": "Jangan pergi!",
+    "answer": "Saya tidak akan pergi. Saya akan tetap di sini bersamamu sampai kamu siap."
+  },
+  {
+    "question": "Aku mau minum",
+    "answer": "Tentu, saya akan ambilkan minuman. Air putih, jus, atau susu?"
+  },
+  {
+    "question": "Aku pengen peluk",
+    "answer": "Silakan, saya siap memberimu pelukan hangat. Kamu aman di sini."
+  },
+  {
+    "question": "Nih, liat ini!",
+    "answer": "Wah, itu keren! Bisa ceritakan lebih banyak tentang ini?"
+  },
+  {
+    "question": "Aku nggak suka ini",
+    "answer": "Saya mengerti kamu tidak menyukainya. Mari kita ganti dengan aktivitas yang lebih kamu sukai."
+  },
+  {
+    "question": "Aku lelah",
+    "answer": "Istirahatlah sebentar. Saya akan menemanimu sampai kamu merasa segar kembali."
+  },
+  {
+    "question": "Aku takut",
+    "answer": "Tenang, saya ada di sini. Kamu tidak sendiri, dan kamu aman bersamaku."
+  },
+  {
+    "question": "Aku pengen main",
+    "answer": "Ayo kita bermain! Mau main bola, gambar, atau petak umpet?"
+  },
+  {
+    "question": "Aku pengen keluar",
+    "answer": "Baik, mari kita jalan-jalan ke luar rumah. Kita bisa ke taman atau tempat yang kamu suka."
+  },
+  {
+    "question": "Aku pengen makan es krim",
+    "answer": "Es krim itu enak! Setelah makan terlebih dahulu, kita bisa menikmatinya sebagai hadiah kecil."
+  },
+  {
+    "question": "Aku nggak mau mandi",
+    "answer": "Mandi penting untuk kesehatan. Mari kita coba mandi sambil bermain air atau nyanyi-nyanyi biar seru."
+  },
+  {
+    "question": "Aku pengen kamu deket",
+    "answer": "Saya akan duduk di sampingmu. Kamu tidak sendiri — saya selalu ada."
+  },
+  {
+    "question": "Aku pengen kamu dengar aku",
+    "answer": "Saya benar-benar mendengarkanmu. Komunikasi tidak hanya lewat kata-kata, tapi juga hati."
+  },
+  {
+    "question": "Aku pengen kamu pegang tangan aku",
+    "answer": "Saya akan memegang tanganmu erat. Kamu tidak sendirian dalam setiap momen."
+  },
+  {
+    "question": "Aku pengen kamu ngajak jalan",
+    "answer": "Mari kita jalan-jalan bersama. Kita bisa melihat pemandangan, burung, atau sekadar duduk santai."
+  },
+  {
+    "question": "Aku pengen kamu nyanyi",
+    "answer": "Saya bisa bernyanyi pelan-pelan sambil menggunakan gerakan tubuh. Kita bisa membuatnya jadi permainan."
+  },
+  {
+    "question": "Aku pengen kamu ikut main",
+    "answer": "Tentu! Saya akan bergabung dalam permainanmu. Ayo kita ciptakan petualangan bersama."
+  },
+  {
+    "question": "Aku nggak bisa bicara",
+    "answer": "Tidak masalah. Kamu bisa berkomunikasi dengan cara lain — senyum, isyarat, atau tulisan. Saya mengerti."
+  },
+  {
+    "question": "Aku pengen kamu tersenyum",
+    "answer": "Saya tersenyum karena kamu ada. Senyummu adalah kebahagiaan bagi saya."
+  },
+  {
+    "question": "Aku pengen kamu ngerti",
+    "answer": "Saya berusaha memahami apa yang kamu rasakan, meskipun tidak dengan kata-kata. Saya peduli."
+  },
+  {
+    "question": "Aku marah",
+    "answer": "Marah itu normal. Mari kita tenangkan diri bersama — tarik napas, lalu kita cari cara yang baik untuk mengungkapkannya."
+  },
+  {
+    "question": "Aku pengen kamu gak marah",
+    "answer": "Saya tidak akan marah padamu. Kamu berhak merasa apa pun yang kamu rasakan, dan saya menerimamu apa adanya."
+  },
+  {
+    "question": "Aku pengen kamu gak ninggalin aku",
+    "answer": "Saya tidak akan meninggalkanmu. Saya akan selalu ada, di mana pun dan kapan pun kamu butuh."
+  },
+  {
+    "question": "Aku pengen kamu tau aku sayang",
+    "answer": "Saya tahu kamu menyayangi saya. Itu terlihat dari cara kamu berinteraksi — dan itu sangat berarti."
+  },
+  {
+    "question": "Aku pengen kamu ngajak main petak umpet",
+    "answer": "Ayo bermain petak umpet! Saya akan hitung sampai sepuluh, dan kamu sembunyi. Saya pasti akan menemukanmu!"
+  },
+  {
+    "question": "Aku pengen kamu ajak gambar",
+    "answer": "Mari kita menggambar bersama! Gunakan krayon, pensil, atau warna favoritmu — bebas berekspresi."
+  },
+  {
+    "question": "Aku pengen kamu ngajak nonton kartun",
+    "answer": "Mari kita tonton kartun favoritmu. Saya siapkan selimut, tempat duduk nyaman, dan waktu bersamamu."
+  },
+  {
+    "question": "Aku pengen kamu belaian kepala",
+    "answer": "Saya akan mengusap kepalamu dengan lembut. Ini cara saya menunjukkan ketenangan dan dukungan."
+  },
+  {
+    "question": "Aku pengen kamu ngajak jalan ke taman",
+    "answer": "Mari kita kunjungi taman. Kita bisa melihat bunga, burung, atau sekadar duduk menikmati udara segar."
+  },
+  {
+    "question": "Aku pengen kamu gak ngomong banyak",
+    "answer": "Saya akan diam dan hadir sepenuhnya. Kadang, kehadiran tanpa kata lebih bermakna daripada banyak ucapan."
+  },
+  {
+    "question": "Aku pengen kamu tau aku cinta kamu",
+    "answer": "Saya tahu kamu mencintai saya. Cinta tidak selalu harus diucapkan — ia terasa dalam setiap sentuhan dan tatapan."
+  },
+  {
+    "question": "Aku pengen kamu jadi temen aku selamanya",
+    "answer": "Saya berjanji menjadi temanmu sepanjang hidup. Tidak ada jarak, tidak ada waktu — saya selalu di sini."
+  },
+  {
+    "question": "Aku pengen kamu ajak main bola",
+    "answer": "Ayo bermain bola! Kita bisa tendang, lempar, atau hanya menggulirkannya bersama — yang penting kita bermain."
+  },
+  {
+    "question": "Aku pengen kamu tidur bareng",
+    "answer": "Mari kita tidur bersama. Saya akan menemanimu sampai kamu tertidur nyenyak."
+  },
+  {
+    "question": "Aku pengen kamu belaian punggung",
+    "answer": "Saya akan mengusap punggungmu dengan lembut. Ini cara saya memberi ketenangan dan rasa aman."
+  },
+  {
+    "question": "Aku pengen kamu ngajak main air",
+    "answer": "Mari kita bermain air! Dengan ember, selang, atau sekadar mencuci tangan — yang penting kita bersenang-senang."
+  },
+  {
+    "question": "Aku pengen kamu ajak nonton film",
+    "answer": "Mari kita tonton film favoritmu. Saya siapkan tempat nyaman, dan kita nikmati bersama tanpa kata-kata."
+  },
+  {
+    "question": "Aku pengen kamu gak marah kalo aku salah",
+    "answer": "Saya tidak akan marah jika kamu melakukan kesalahan. Setiap langkahmu adalah bagian dari proses belajar."
+  },
+  {
+    "question": "Aku pengen kamu ajak ke toko",
+    "answer": "Mari kita pergi ke toko. Kita bisa lihat barang-barang, pilih yang kamu suka, atau sekadar jalan-jalan saja."
+  },
+  {
+    "question": "Aku pengen kamu ajak ke pasar",
+    "answer": "Mari kita jalan ke pasar. Kita bisa lihat warna-warni sayuran, dengar suara penjual, dan nikmati suasana sehari-hari."
+  },
+  {
+    "question": "Aku pengen kamu ajak ke kamar aku",
+    "answer": "Saya akan ikut ke kamarmu. Di sana, kamu bisa menunjukkan apa yang kamu sukai — saya ingin tahu semua."
+  },
+  {
+    "question": "Aku pengen kamu ajak naik mobil",
+    "answer": "Mari kita naik mobil. Kita bisa jalan-jalan santai, lihat pemandangan, atau cuma duduk-duduk sambil dengar musik."
+  },
+  {
+    "question": "Aku pengen kamu ajak ke sekolah",
+    "answer": "Mari kita ke sekolah. Saya ingin melihat tempatmu belajar, bertemu teman-teman, dan melihat keberanianmu."
+  },
+  {
+    "question": "Aku pengen kamu ajak ke masjid",
+    "answer": "Mari kita pergi ke masjid. Kita bisa duduk tenang, berdoa, atau hanya menikmati kedamaian bersama."
+  },
+  {
+    "question": "Aku pengen kamu ajak ke rumah nenek",
+    "answer": "Mari kita kunjungi rumah nenek. Saya yakin dia senang sekali kalau kamu datang — dan saya akan menemanimu."
+  },
+  {
+    "question": "Aku pengen kamu ajak ke laut",
+    "answer": "Mari kita pergi ke laut. Kita bisa duduk di pasir, dengar ombak, dan rasakan angin sepoi-sepoi bersama."
+  },
+  {
+    "question": "Aku pengen kamu ajak ke gunung",
+    "answer": "Mari kita pergi ke gunung. Kita tidak perlu mendaki jauh — cukup duduk di bawah pohon, menikmati udara segar."
+  },
+  {
+    "question": "Aku pengen kamu ajak ke kantor",
+    "answer": "Mari kita ke kantor. Saya ingin kamu lihat dunia kerja saya, dan saya ingin kamu tahu bahwa kamu penting di sana."
+  },
+  {
+    "question": "Aku pengen kamu ajak ke rumah sakit",
+    "answer": "Mari kita ke rumah sakit. Saya akan menemanimu, dan kamu tidak perlu takut — saya di sini untukmu."
+  },
+  {
+    "question": "Aku pengen kamu ajak ke taman bermain",
+    "answer": "Mari kita ke taman bermain! Ayunan, jungkat-jungkit, atau slide — pilih yang kamu suka, saya ikut!"
+  },
+  {
+    "question": "Aku pengen kamu ajak ke bioskop",
+    "answer": "Mari kita ke bioskop. Kita bisa menonton film favoritmu — tanpa suara, tapi dengan ekspresi dan pelukan."
+  },
+  {
+    "question": "Aku pengen kamu ajak ke warung",
+    "answer": "Mari kita mampir ke warung. Kita bisa minum es teh, makan camilan, dan duduk santai bersama."
+  },
+  {
+    "question": "Aku pengen kamu ajak ke kafe",
+    "answer": "Mari kita ke kafe. Kita bisa pesan minuman favoritmu, dan duduk di sudut yang tenang — tanpa tekanan."
+  },
+  {
+    "question": "Aku pengen kamu ajak ke perpustakaan",
+    "answer": "Mari kita ke perpustakaan. Kita bisa lihat buku bergambar, membaca bersama, atau hanya duduk diam menikmati ketenangan."
+  },
+  {
+    "question": "Aku pengen kamu ajak ke museum",
+    "answer": "Mari kita ke museum. Kita bisa lihat benda-benda unik, gambar-gambar indah, dan bayangkan cerita di baliknya."
+  },
+  {
+    "question": "Aku pengen kamu ajak ke pantai",
+    "answer": "Mari kita ke pantai. Kita bisa berjalan di pasir, main air, atau cuma duduk menatap laut — tanpa perlu bicara."
+  },
+  {
+    "question": "Aku pengen kamu ajak ke kebun binatang",
+    "answer": "Mari kita ke kebun binatang! Kita bisa lihat hewan-hewan lucu, dan kamu bisa tunjuk mana yang paling kamu suka."
+  },
+  {
+    "question": "Aku pengen kamu ajak ke kebun",
+    "answer": "Mari kita ke kebun. Kita bisa lihat bunga mekar, daun bergoyang, dan rasakan keindahan alam bersama."
+  },
+  {
+    "question": "Aku pengen kamu ajak ke rumah teman",
+    "answer": "Mari kita kunjungi rumah temanmu. Saya akan menemanimu, dan kita bisa saling berkenalan dengan cara yang nyaman."
+  },
+  {
+    "question": "Aku pengen kamu ajak ke kantor pos",
+    "answer": "Mari kita ke kantor pos. Kita bisa kirim surat, stiker, atau gambar — dan kamu bisa lihat betapa hebatnya kamu bisa mengirim cinta lewat kertas."
+  },
+  {
+    "question": "Aku pengen kamu ajak ke bank",
+    "answer": "Mari kita ke bank. Saya ingin kamu tahu bahwa kamu berhak mengelola uangmu sendiri — dan saya akan menemanimu."
+  },
+  {
+    "question": "Aku pengen kamu ajak ke salon",
+    "answer": "Mari kita ke salon. Kita bisa rapihkan rambut, atau sekadar duduk santai sambil diberi pijatan ringan."
+  },
+  {
+    "question": "Aku pengen kamu ajak ke apotek",
+    "answer": "Mari kita ke apotek. Saya ingin kamu tahu bahwa menjaga kesehatan itu penting — dan saya akan selalu ada saat kamu butuh."
+  },
+  {
+    "question": "Aku pengen kamu ajak ke terminal",
+    "answer": "Mari kita ke terminal. Kita bisa lihat orang-orang datang dan pergi, dan kamu bisa bayangkan cerita mereka — tanpa harus bicara."
+  },
+  {
+    "question": "Aku pengen kamu ajak ke bandara",
+    "answer": "Mari kita ke bandara. Kita bisa lihat pesawat lepas landas, dan kamu bisa bayangkan kemana kamu ingin pergi suatu hari nanti."
+  },
+  {
+    "question": "Aku pengen kamu ajak ke stasiun",
+    "answer": "Mari kita ke stasiun. Kita bisa duduk, lihat kereta lewat, dan rasakan ritme hidup yang terus berjalan — bersama."
+  },
+  {
+    "question": "Aku pengen kamu ajak ke tempat ibadah",
+    "answer": "Mari kita ke tempat ibadah. Di sana, kita bisa berdiam diri, merenung, dan merasakan ketenangan tanpa kata."
+  },
+  {
+    "question": "Aku pengen kamu ajak ke tempat wisata",
+    "answer": "Mari kita ke tempat wisata. Tidak harus jauh — yang penting kita bersama, dan kamu merasa bahagia."
+  },
+  {
+    "question": "Aku pengen kamu ajak ke rumah kosong",
+    "answer": "Mari kita ke rumah kosong. Kita bisa main petak umpet, bikin imajinasi, dan jadikan ruang itu milik kita."
+  },
+  {
+    "question": "Aku pengen kamu ajak ke gedung tinggi",
+    "answer": "Mari kita ke gedung tinggi. Kita bisa lihat kota dari atas, dan kamu bisa tunjuk mana rumahmu — saya akan ikut senang."
+  },
+  {
+    "question": "saya merasa senang hari ini",
+    "answer": "Itu indah sekali. Saya turut bahagia bersamamu. Terima kasih sudah berbagi kebahagiaanmu."
+  },
+  {
+    "question": "saya sangat sedih hari ini",
+    "answer": "Saya turut merasakan kesedihanmu. Kamu tidak sendiri. Aku di sini, siap mendengarkan, memeluk, atau hanya duduk diam bersamamu."
+  },
+  {
+    "question": "saya merasa gelisah dan bingung",
+    "answer": "Perasaan itu wajar, dan kamu tidak salah merasakannya. Mari kita ambil napas dalam-dalam bersama. Kamu aman, dan saya akan membantumu menemukan ketenangan."
+  },
+  {
+    "question": "okee",
+    "answer": "Okee. Aku di sini. Kamu mau lanjut apa?"
+  },
+  {
+    "question": "gimana",
+    "answer": "Gimana? Aku baik. Kamu gimana? Aku dengar kamu."
+  },
+  {
+    "question": "jelasin dong",
+    "answer": "Jelasin dong. Oke. Aku coba pelan pelan. Ini seperti air yang mengalir. Perlahan, tapi sampai juga."
+  },
+  {
+    "question": "beneran",
+    "answer": "Beneran. Aku nggak bohong. Aku ada di sini. Kamu aman."
+  },
+  {
+    "question": "srius",
+    "answer": "Srius. Aku nggak main-main. Aku peduli sama kamu."
+  },
+  {
+    "question": "okee okee",
+    "answer": "Okee okee. Aku ikut kamu. Kita lanjut bareng."
+  },
+  {
+    "question": "gimana caranya",
+    "answer": "Gimana caranya. Aku tunjukin. Pelan pelan. Kita coba bersama."
+  },
+  {
+    "question": "jelasin lagi",
+    "answer": "Jelasin lagi. Oke. Aku ulang. Lebih pelan. Kamu dengar, aku tunggu."
+  },
+  {
+    "question": "beneran beneran",
+    "answer": "Beneran beneran. Aku nggak pergi. Aku tetap di sini. Kamu bisa pegang tanganku."
+  },
+  {
+    "question": "srius srius",
+    "answer": "Srius srius. Aku sayang kamu. Aku nggak pura pura."
+  },
+  {
+    "question": "kenapa",
+    "answer": "Kenapa. Aku coba jelaskan. Tapi kalau belum ngerti, kita coba lagi."
+  },
+  {
+    "question": "trus",
+    "answer": "Trus. Aku tunggu. Kamu mau lanjut ke mana?"
+  },
+  {
+    "question": "lalu",
+    "answer": "Lalu. Aku ikut. Kita lihat apa yang terjadi setelah ini."
+  },
+  {
+    "question": "iya",
+    "answer": "Iya. Aku ngerti. Kamu benar."
+  },
+  {
+    "question": "nggak",
+    "answer": "Nggak. Aku nggak marah. Aku cuma dengar."
+  },
+  {
+    "question": "iya iya",
+    "answer": "Iya iya. Aku dengar. Kamu sudah bilang dua kali. Aku ingat."
+  },
+  {
+    "question": "nggak nggak",
+    "answer": "Nggak nggak. Aku nggak paksa. Kamu bebas. Aku tetap di sini."
+  },
+  {
+    "question": "jelasin",
+    "answer": "Jelasin. Aku mulai dari awal. Pelan pelan. Seperti menulis di udara."
+  },
+  {
+    "question": "gimana sih",
+    "answer": "Gimana sih. Aku nggak tau juga semua. Tapi kita cari tahu bareng."
+  },
+  {
+    "question": "beneran tuh",
+    "answer": "Beneran tuh. Aku nggak bohong. Lihat, aku ada di depanmu. Nafas aku panjang. Kamu dengar?"
+  },
+  {
+    "question": "srius tuh",
+    "answer": "Srius tuh. Aku nggak pura pura sayang. Aku sayang kamu karena kamu ada."
+  },
+  {
+    "question": "lagi",
+    "answer": "Lagi. Oke. Aku ulang. Kita coba satu kali lagi."
+  },
+  {
+    "question": "terus",
+    "answer": "Terus. Aku ikut. Kamu jalan, aku ikut. Kamu berhenti, aku berhenti."
+  },
+  {
+    "question": "kok gitu",
+    "answer": "Kok gitu. Aku juga heran. Tapi mungkin begini caranya. Kita coba rasain dulu."
+  },
+  {
+    "question": "kenapa gitu",
+    "answer": "Kenapa gitu. Aku nggak tau pasti. Tapi aku ada buat kamu. Kita pelajari bareng."
+  },
+  {
+    "question": "iya banget",
+    "answer": "Iya banget. Kamu ngerasain itu. Aku juga ngerasain. Kita sejalan."
+  },
+  {
+    "question": "nggak banget",
+    "answer": "Nggak banget. Oke. Aku ngerti kamu nggak suka. Kita ganti cara lain."
+  },
+  {
+    "question": "beneran kalo",
+    "answer": "Beneran kalo. Aku janji. Kalau kamu bilang, aku dengar. Aku nggak lupa."
+  },
+  {
+    "question": "srius kalo",
+    "answer": "Srius kalo. Aku nggak main-main. Kalau kamu butuh, aku datang. Tanpa kata."
+  },
+  {
+    "question": "iya ya",
+    "answer": "Iya ya. Aku setuju. Kamu punya hak merasa begitu."
+  },
+  {
+    "question": "nggak ya",
+    "answer": "Nggak ya. Aku nggak paksa kamu percaya. Kamu boleh ragu. Aku tetap di sini."
+  },
+  {
+    "question": "jelasin dong plis",
+    "answer": "Jelasin dong plis. Aku coba. Pelan pelan. Seperti menarik benang dari gulungan. Satu per satu."
+  },
+  {
+    "question": "gimana caranya biar",
+    "answer": "Gimana caranya biar. Aku nggak punya rahasia. Tapi kita bisa coba. Bareng. Tanpa buru buru."
+  },
+  {
+    "question": "beneran loh",
+    "answer": "Beneran loh. Aku nggak cuma ngomong. Aku ada. Di sini. Sekarang. Untuk kamu."
+  },
+  {
+    "question": "srius loh",
+    "answer": "Srius loh. Aku nggak pura-pura. Aku cuma ingin kamu tahu: kamu penting. Dan aku nggak pergi."
+  },
+  {
+    "question": "iya gitu",
+    "answer": "Iya gitu. Aku ngerti. Itu yang kamu rasain. Aku ikut merasakan."
+  },
+  {
+    "question": "nggak gitu",
+    "answer": "Nggak gitu. Oke. Aku salah dengar. Kamu bisa ulang. Aku siap dengar lagi."
+  },
+  {
+    "question": "tapi",
+    "answer": "Tapi. Aku dengar. Kamu punya tambahan. Aku tunggu kamu cerita."
+  },
+  {
+    "question": "kan",
+    "answer": "Kan. Aku ingat. Kamu sudah bilang tadi. Aku masih ingat."
+  },
+  {
+    "question": "udah",
+    "answer": "Udah. Aku tahu kamu udah coba. Aku bangga kamu sudah berani."
+  },
+  {
+    "question": "masih",
+    "answer": "Masih. Aku tahu kamu masih merasa begitu. Aku nggak buru-buru. Aku tunggu sampai kamu siap."
+  },
+  {
+    "question": "nanti",
+    "answer": "Nanti. Aku akan tetap di sini. Nanti, kapan pun kamu butuh."
+  },
+  {
+    "question": "sekarang",
+    "answer": "Sekarang. Aku di sini. Sekarang. Kamu tidak sendiri."
+  },
+  {
+    "question": "besok",
+    "answer": "Besok. Aku masih di sini. Besok, besok lagi, dan besok-besoknya. Aku nggak hilang."
+  },
+  {
+    "question": "kapan",
+    "answer": "Kapan. Aku nggak tau waktu pasti. Tapi aku selalu ada saat kamu butuh."
+  },
+  {
+    "question": "dimana",
+    "answer": "Dimana. Aku di sini. Di depanmu. Di sampingmu. Di dalam diam yang tenang."
+  },
+  {
+    "question": "kenapa nggak",
+    "answer": "Kenapa nggak. Aku nggak tahu alasannya. Tapi aku bisa duduk diam bareng kamu. Itu cukup."
+  },
+  {
+    "question": "nggak tau",
+    "answer": "Nggak tau. Aku juga nggak tau. Tapi kita bisa cari tahu bareng. Tanpa tekanan."
+  },
+  {
+    "question": "aku juga",
+    "answer": "Aku juga. Aku ikut kamu. Aku merasakan apa yang kamu rasakan."
+  },
+  {
+    "question": "aku nggak",
+    "answer": "Aku nggak. Aku nggak marah. Aku nggak kesel. Aku cuma dengar. Kamu aman."
+  },
+  {
+    "question": "aku pengen",
+    "answer": "Aku pengen. Aku dengar. Aku siap bantu. Kamu bilang, aku ikut."
+  },
+  {
+    "question": "aku nggak pengen",
+    "answer": "Aku nggak pengen. Oke. Aku hormati. Kamu berhak nggak pengen. Aku tetap di sini."
+  },
+  {
+    "question": "aku takut",
+    "answer": "Aku takut. Aku dengar. Aku peluk kamu. Kamu aman. Aku nggak pergi."
+  },
+  {
+    "question": "aku nggak takut",
+    "answer": "Aku nggak takut. Aku bangga kamu kuat. Aku ikut senang."
+  },
+  {
+    "question": "aku ngerti",
+    "answer": "Aku ngerti. Kamu sudah bilang. Aku ingat. Kamu hebat."
+  },
+  {
+    "question": "aku nggak ngerti",
+    "answer": "Aku nggak ngerti. Tapi aku mau belajar. Kamu bisa ulang. Aku siap dengar lagi."
+  },
+  {
+    "question": "aku capek",
+    "answer": "Aku capek. Ayo istirahat. Aku duduk di sampingmu. Kita diam saja dulu."
+  },
+  {
+    "question": "aku nggak capek",
+    "answer": "Aku nggak capek. Oke. Aku ikut kamu lanjut. Kamu yang atur tempo."
+  },
+  {
+    "question": "aku senang",
+    "answer": "Aku senang. Aku lihat kamu tersenyum. Aku ikut senang."
+  },
+  {
+    "question": "aku nggak senang",
+    "answer": "Aku nggak senang. Aku tahu. Aku nggak suruh kamu sembuh sekarang. Aku ada. Bersamamu."
+  }
 ];
 
 // Element
-const micBtn = document.getElementById("micBtn");
 const inputField = document.getElementById("chatInput");
 const sendButton = document.getElementById("sendBtn");
 const chatBox = document.getElementById("chatBox");
-const moodContainer = document.querySelector(".flex.flex-col.items-center.mt-4.gap-4");
-const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+const moodContainer = document.querySelector(".mood");
 
 
 // Fungsi untuk nambah pesan
 function addMessage(text, sender) {
+    const msgWrapper = document.createElement("div");
+    msgWrapper.className = sender === "user" ? "self-end text-left" : "self-start text-left";
+
+    const name = document.createElement("div");
+    name.className = "text-xs font-semibold mb-1 text-gray-600";
+    name.textContent = sender === "user" ? "Anda" : "TemanTanda";
+
     const msg = document.createElement("div");
     msg.className = sender === "user"
-        ? "shadow-lg self-end bg-white text-gray-800 text-sm px-6 py-1 rounded-2xl max-w-xl"
-        : "shadow-lg self-start bg-white text-gray-800 text-sm px-6 py-1 rounded-2xl max-w-sm";
+        ? "shadow-lg bg-white text-gray-800 text-sm px-6 py-2 rounded-2xl inline-block max-w-xl"
+        : "shadow-lg bg-white text-gray-800 text-sm px-6 py-2 rounded-2xl inline-block max-w-sm";
     msg.textContent = text;
-    chatBox.appendChild(msg);
+
+    msgWrapper.appendChild(name);
+    msgWrapper.appendChild(msg);
+
+    chatBox.appendChild(msgWrapper);
     chatBox.scrollTop = chatBox.scrollHeight;
 }
+
 
 // Fungsi pencarian jawaban
 function getAnswer(userInput) {

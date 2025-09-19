@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Papan Bantuan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .dragging {
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gradient-to-b from-blue-400 to-blue-600">
+
+  <div class="bg-blue-200 rounded-2xl p-6 w-[700px] shadow-xl">
+    <!-- Header -->
+    <div class="flex justify-between items-center mb-6">
+      <button class="text-white font-bold">Kembali</button>
+      <h1 class="bg-blue-400 px-4 py-2 rounded-xl text-white font-bold shadow">
+        PAPAN BANTUAN
+      </h1>
+    </div>
+
+    <!-- Papan kalimat -->
+    <div id="sentenceBoard" class="flex gap-4 min-h-[60px] bg-blue-300 rounded-xl p-4 justify-center items-center mb-6">
+      <!-- kata akan ditaruh disini -->
+    </div>
+
+    <!-- Pilihan kata -->
+    <div id="wordBank" class="flex flex-wrap gap-4 justify-center">
+      <div draggable="true" class="bg-white px-4 py-2 rounded-xl shadow font-bold text-blue-600 cursor-move">SAYA</div>
+      <div draggable="true" class="bg-white px-4 py-2 rounded-xl shadow font-bold text-blue-600 cursor-move">LAPAR</div>
+      <div draggable="true" class="bg-white px-4 py-2 rounded-xl shadow font-bold text-blue-600 cursor-move">HAUS</div>
+      <div draggable="true" class="bg-white px-4 py-2 rounded-xl shadow font-bold text-blue-600 cursor-move">CAPEK</div>
+      <div draggable="true" class="bg-white px-4 py-2 rounded-xl shadow font-bold text-blue-600 cursor-move">BUTUH BANTUAN</div>
+      <div draggable="true" class="bg-white px-4 py-2 rounded-xl shadow font-bold text-blue-600 cursor-move">INGIN KE TOILET</div>
+      <div draggable="true" class="bg-white px-4 py-2 rounded-xl shadow font-bold text-blue-600 cursor-move">BINGUNG</div>
+      <div draggable="true" class="bg-white px-4 py-2 rounded-xl shadow font-bold text-blue-600 cursor-move">SAKIT</div>
+      <div draggable="true" class="bg-white px-4 py-2 rounded-xl shadow font-bold text-blue-600 cursor-move">BUTUH ISTIRAHAT</div>
+    </div>
+  </div>
+
+  <script>
+    const words = document.querySelectorAll('#wordBank div, #sentenceBoard div');
+    const sentenceBoard = document.getElementById('sentenceBoard');
+    const wordBank = document.getElementById('wordBank');
+
+    let draggedItem = null;
+
+    document.querySelectorAll('[draggable="true"]').forEach(word => {
+      word.addEventListener('dragstart', () => {
+        draggedItem = word;
+        word.classList.add('dragging');
+      });
+
+      word.addEventListener('dragend', () => {
+        draggedItem = null;
+        word.classList.remove('dragging');
+      });
+    });
+
+    [sentenceBoard, wordBank].forEach(board => {
+      board.addEventListener('dragover', e => {
+        e.preventDefault();
+      });
+
+      board.addEventListener('drop', e => {
+        if (draggedItem) {
+          board.appendChild(draggedItem);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
