@@ -6,7 +6,7 @@
   --tertiary-color: #efce1f;
   --quaternary-color: #ffffff;
   --gradient-color: linear-gradient(to right, #3b8eff, #235599);
-  
+
   --gray: #d9d9d9;
   --white-50: #f9fafb;
   --white-100: #f0f4ff;
@@ -19,8 +19,6 @@
   --white-800: #155bbf;
   --white-900: #0d3e8c;
 }
-
-
 
 * {
   scroll-behavior: smooth;
@@ -40,16 +38,6 @@ body {
   white-space: nowrap;
   overflow: hidden;
   animation: slide 2s;
-}
-
-@keyframes slide {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 43%;
-  }
 }
 
 .searchButton {
@@ -111,6 +99,9 @@ body {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
+.maskot {
+  animation: sway 2s infinite ease-in-out;
+}
 
 .card {
   height: 250px;
@@ -170,6 +161,36 @@ body {
   background-position: center;
 }
 
+@keyframes slide {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 43%;
+  }
+}
+
+@keyframes sway {
+  0% {
+    transform: translateX(0) translateY(0) scale(1);
+  }
+  20% {
+    transform: translateX(8px) translateY(-8px) scale(1.10) rotate(2deg);
+  }
+  40% {
+    transform: translateX(0) translateY(0) scale(1);
+  }
+  60% {
+    transform: translateX(-8px) translateY(-8px) scale(1.10) rotate(-2deg);
+  }
+  80% {
+    transform: translateX(0) translateY(0) scale(1);
+  }
+  100% {
+    transform: translateX(0) translateY(0) scale(1);
+  }
+}
 /* .heroBox::before {
   background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgb(255, 0, 0), transparent 40%);
   content: "";
