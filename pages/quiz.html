@@ -2,125 +2,112 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/style.css">
 
-    <!-- Tailwind CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- GoogleFonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
 
 </head>
 
 <body>
-    <div class="m-5">
-        <button onclick="window.location.href = '../index.html#contents'"
-            class="flex text-center items-center font-poppins font-semibold gap-2 cursor-pointer">
-            <img src="../assets/images/icon/arrow-left.png" alt="" class="w-[10px]" />
-            <h1>Kembali</h1>
-        </button>
+  <div class="m-5">
+    <button onclick="window.location.href = '../index.html#contents'"
+      class="flex text-center items-center font-poppins font-semibold gap-2 cursor-pointer">
+      <img src="../assets/images/icon/arrow-left.png" alt="" class="w-[10px]" />
+      <h1>Kembali</h1>
+    </button>
+  </div>
+
+
+  <section id="game">
+    <div class="flex p-15">
+      <div class="flex font-semibold items-center text-4xl gap-5">
+        <img src="../assets/images/icon/brain.svg" alt="" class="w-[60px]" />
+        <h1>Flash Card</h1>
+      </div>
+    </div>
+
+    <div class="flex gap-10 mx-auto justify-center">
+      <div class="card">
+        <div class="frontCard">
+          <img src="../assets/images/card/game/front/s.png" alt="">
+        </div>
+        <div class="backCard">
+          <img src="../assets/images/card/game/back/s.png" alt="">
+        </div>
+      </div>
+      <div class="card">
+        <div class="frontCard">
+          <img src="../assets/images/card/game/front/menolak.png" alt="">
+        </div>
+        <div class="backCard">
+          <img src="../assets/images/card/game/back/menolak.png" alt="">
+        </div>
+      </div>
+      <div class="card">
+        <div class="frontCard">
+          <img src="../assets/images/card/game/front/p.png" alt="">
+        </div>
+        <div class="backCard">
+          <img src="../assets/images/card/game/back/p.png" alt="">
+        </div>
+      </div>
+      <div class="card">
+        <div class="frontCard">
+          <img src="../assets/images/card/game/front/berjanji.png" alt="">
+        </div>
+        <div class="backCard">
+          <img src="../assets/images/card/game/back/berjanji.png" alt="">
+        </div>
+      </div>
     </div>
 
 
-    <section id="game">
-        <div class="flex p-15">
-            <div class="flex font-semibold items-center text-4xl gap-5">
-                <img src="../assets/images/icon/brain.svg" alt="" class="w-[60px]" />
-                <h1>Flash Card</h1>
-            </div>
-        </div>
+    <div class="flex justify-center text-center items-center mt-20">
+      <div class="bg-gradient-to-r from-[#3B8EFF] to-[#235599] px-25 py-1 rounded-full text-white font-medium text-lg">
+        <h1>
+          Uji ingatan mu selanjutnya
+        </h1>
+      </div>
+    </div>
 
-        <div class="flex gap-10 mx-auto justify-center">
-            <div class="card">
-                <div class="frontCard">
-                    <img src="../assets/images/card/game/front/s.png" alt="">
-                </div>
-                <div class="backCard">
-                    <img src="../assets/images/card/game/back/s.png" alt="">
-                </div>
-            </div>
-            <div class="card">
-                <div class="frontCard">
-                    <img src="../assets/images/card/game/front/menolak.png" alt="">
-                </div>
-                <div class="backCard">
-                    <img src="../assets/images/card/game/back/menolak.png" alt="">
-                </div>
-            </div>
-            <div class="card">
-                <div class="frontCard">
-                    <img src="../assets/images/card/game/front/p.png" alt="">
-                </div>
-                <div class="backCard">
-                    <img src="../assets/images/card/game/back/p.png" alt="">
-                </div>
-            </div>
-            <div class="card">
-                <div class="frontCard">
-                    <img src="../assets/images/card/game/front/berjanji.png" alt="">
-                </div>
-                <div class="backCard">
-                    <img src="../assets/images/card/game/back/berjanji.png" alt="">
-                </div>
-            </div>
-        </div>
+    <div class="flex p-15">
+      <div class="flex font-semibold items-center text-4xl gap-5">
+        <img src="../assets/images/icon/lamp.svg" alt="" class="w-[60px]" />
+        <h1>Quick Quiz</h1>
+      </div>
+    </div>
 
-        <div class="flex justify-center text-center items-center mt-20">
-            <div
-                class="bg-gradient-to-r from-[#3B8EFF] to-[#235599] px-10 py-1 rounded-full text-white font-medium text-sm">
-                <h1>
-                    Uji ingatan mu selanjutnya
-                </h1>
-            </div>
-        </div>
+    <div class="flex flex-col justify-center  items-center">
+      <img id="quizImage" src="" alt="quizImage" class="w-[500px] h-auto py-10">
+      <div id="quizOption" class="grid grid-cols-2 gap-10 w-[550px] text-white font-bold text-3xl">
+      </div>
+      <button id="selanjutnyaBtn"
+       ></button>
+    </div>
 
-        <div class="flex p-15">
-            <div class="flex font-semibold items-center text-4xl gap-5">
-                <img src="../assets/images/icon/lamp.svg" alt="" class="w-[60px]" />
-                <h1>Quick Quiz</h1>
-            </div>
-        </div>
+    <div id="popUp" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+      <div class="flex flex-col justify-center">
+        <img id="popUpImage" alt="popUp" class="w-[200px] mx-auto">
+        <button id="closePopUp"
+          class="px-4 py-2 bg-gradient-to-r from-[#3B8EFF] to-[#235599] rounded-full text-white">Selanjutnya</button>
+      </div>
+    </div>
+  </section>
 
-        <div class="flex justify-center">
-            <div class="flex flex-col gap-10">
-                <div
-                    class="flex justify-center items-center bg-gradient-to-r from-[#3B8EFF] to-[#235599] rounded-2xl h-[8rem] w-[26rem]">
-                    <img src="../assets/hand-sign/c.png" alt="" class="-mt-25 object-center">
-                </div>
-                <div class="grid grid-cols-2 gap-5">
-                    <div onclick="this.classList.contains('bg-green-400') ? this.classList.replace('bg-green-400','bg-[#ebebeb]') : this.classList.replace('bg-[#ebebeb]','bg-green-400')"
-                        class="cursor-pointer flex justify-center bg-[#ebebeb] glassy py-1 rounded-full text-2xl font-semibold text-black">
-                        <h1>
-                            M
-                        </h1>
-                    </div>
-                    <div onclick="this.classList.contains('bg-red-400') ? this.classList.replace('bg-red-400','bg-[#ebebeb]') : this.classList.replace('bg-[#ebebeb]','bg-red-400')"
-                        class="cursor-pointer flex justify-center bg-[#ebebeb] glassy py-1 rounded-full text-2xl font-semibold text-black">
-                        <h1>
-                            M
-                        </h1>
-                    </div>
-                    <div onclick="this.classList.contains('bg-red-400') ? this.classList.replace('bg-red-400','bg-[#ebebeb]') : this.classList.replace('bg-[#ebebeb]','bg-red-400')"
-                        class="cursor-pointer flex justify-center bg-[#ebebeb] glassy py-1 rounded-full text-2xl font-semibold text-black">
-                        <h1>
-                            M
-                        </h1>
-                    </div>
-                    <div onclick="this.classList.contains('bg-red-400') ? this.classList.replace('bg-red-400','bg-[#ebebeb]') : this.classList.replace('bg-[#ebebeb]','bg-red-400')"
-                        class="cursor-pointer flex justify-center bg-[#ebebeb] glassy py-1 rounded-full text-2xl font-semibold text-black">
-                        <h1>
-                            M
-                        </h1>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-     <footer id="footer" class="mt-50">
+  <footer id="footer" class="mt-50">
     <div
       class="bg-gradient-to-b from-[#3B8EFF] to-[#235599] rounded-tl-4xl rounded-tr-4xl flex gap-20 px-15 py-15 text-white justify-evenly">
       <div class="flex flex-col gap-1 w-[85%]">
@@ -161,6 +148,9 @@
       </div>
     </div>
   </footer>
+
+
+  <script src="/javascript/quiz.js"></script>
 </body>
 
 </html>

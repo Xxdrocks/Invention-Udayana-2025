@@ -21,6 +21,7 @@
 }
 
 * {
+  margin: 0;
   scroll-behavior: smooth;
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -99,8 +100,8 @@ body {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
-.maskot {
-  animation: sway 2s infinite ease-in-out;
+.maskot:hover {
+  animation: maskot 1.5s infinite linear;
 }
 
 .card {
@@ -155,10 +156,18 @@ body {
 }
 
 .chatBackground {
-  background-image: url(/assets/images/background.png);
+  background-image: url(/assets/images/chatBackground.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.blueBackground {
+  background-image: url(/assets/images/blueBackground.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
 }
 
 @keyframes slide {
@@ -171,18 +180,30 @@ body {
   }
 }
 
-@keyframes sway {
+@keyframes geserKanan {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(200px);
+  }
+}
+
+@keyframes maskot {
   0% {
     transform: translateX(0) translateY(0) scale(1);
   }
   20% {
-    transform: translateX(8px) translateY(-8px) scale(1.10) rotate(2deg);
+    transform: translateX(8px) translateY(-8px) scale(1.1) rotate(2deg);
   }
   40% {
     transform: translateX(0) translateY(0) scale(1);
   }
   60% {
-    transform: translateX(-8px) translateY(-8px) scale(1.10) rotate(-2deg);
+    transform: translateX(-8px) translateY(-8px) scale(1.1) rotate(-2deg);
   }
   80% {
     transform: translateX(0) translateY(0) scale(1);

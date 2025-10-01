@@ -18,11 +18,13 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet" />
+
+
 </head>
 
 <body>
 
-  <!-- Navbar STart -->
+  <!-- Navbar Start -->
 
   <header>
     <img src="assets/images/home/logo.png" alt="" class="absolute w-[170px] top-7 left-15">
@@ -30,8 +32,8 @@
       <div class="flex gap-10 py-2 px-5 ">
         <div class="flex gap-9">
           <a href="#home" class="hover:text-[#235599] transition duration-300 ease-in-out">Beranda</a>
-          <a href="#learn" class="hover:text-[#235599] transition duration-300 ease-in-out">Edukasi</a>
-          <a href="#game" class="hover:text-[#235599] transition duration-300 ease-in-out">Permainan</a>
+          <a href="#funedu" class="hover:text-[#235599] transition duration-300 ease-in-out">FunEdu</a>
+          <a href="#eduplay" class="hover:text-[#235599] transition duration-300 ease-in-out">EduPlay</a>
           <a href="#footer" class="hover:text-[#235599] transition duration-300 ease-in-out">Kontak</a>
         </div>
 
@@ -75,7 +77,7 @@
 
     <!-- Home End -->
 
-    <!-- Learn Start -->
+    <!-- FunEdu Start -->
 
     <section>
       <div class="flex flex-col items-center text-center">
@@ -126,9 +128,9 @@
       </div>
     </section>
 
-    <section id="learn">
+    <section id="funedu" class="w-screen">
       <div class="flex flex-row items-center text-center my-10 ml-10">
-        <img src="assets/images/icon/pencil.svg" alt="" class="">
+        <img src="assets/images/icon/pencil.svg" alt="" class="w-[50px]">
         <h1 class="font-semibold md:text-4xl w-10/12 md:w-6/12">
           Belajar Bersama
           <span class="bg-gradient-to-r from-[#3B8EFF] to-[#235599] bg-clip-text text-transparent">
@@ -150,7 +152,7 @@
             </span> dapat mengeksplor bahasa isyarat internasional yang digunakan di
             berbagai belahan dunia!
           </p>
-          <button onclick="window.location.href = '#contents'"
+          <button onclick="window.location.href = '#eduplay'"
             class="my-7 px-5 py-1 font-semibold bg-gradient-to-b from-[#3B8EFF] to-[#235599] text-white rounded-full cursor-pointer">
             view more
           </button>
@@ -158,7 +160,7 @@
 
         <div class="flex">
           <div class="w-9/12 h-max px-10 my-auto">
-            <iframe class="xl:w-[560px] md:w-[360px]" width="560" height="339"
+            <iframe class="" width="560" height="339"
               src="https://www.youtube.com/embed/K_XSMFfy5gU?si=5pQ2i2I9hkKPrXpw" title="YouTube video player"
               frameborder="0" style="border-radius: 25px;"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -188,13 +190,11 @@
         </div>
       </div>
 
-      <!-- Learn End -->
+      <!-- FunEdu End -->
 
+      <!-- EduPLay Start -->
 
-
-      <!-- Game Start -->
-
-      <div class="flex flex-col md:grid grid-cols-2 gap-7 py-8 md:max-w-4xl xl:max-w-6xl mx-auto" id="contents">
+      <div class="flex flex-col md:grid grid-cols-2 gap-7 py-8 md:max-w-4xl xl:max-w-6xl mx-auto" id="eduplay">
         <div class="relative overflow-hidden">
           <a href="./pages/chatbot.html">
             <img src="assets/images/home/Cover/maskot2.png" alt="" class="absolute w-[240px] left-10 bottom-0 maskot">
@@ -208,7 +208,7 @@
           </a>
         </div>
         <div class="relative overflow-hidden">
-          <a href="./pages/game.html">
+          <a href="./pages/pemilihan.html">
             <img src="assets/images/home/Cover/maskot.png" alt="" class="absolute w-[240px] left-10 bottom-0 maskot">
             <img src="assets/images/home/Cover/papan.png" alt="" class="w-full mx-auto rounded-3xl block" />
           </a>
@@ -222,16 +222,15 @@
       </div>
     </section>
 
-    <!-- Game End -->
+    <!-- EduPLay End -->
 
-
-    <!--  -->
+    <!-- Rating Start -->
 
     <section>
       <div class="my-50">
         <div
           class="mx-auto p-2 bg-[#ffffff] w-7/12 rounded-2xl text-center text-center font-semibold text-4xl mb-[-30px] relative">
-          <h1 class="text-center">Bagaimana Perasaan Teman Saat ini</h1>
+          <h1 class="text-center">Bagaimana Perasaan <span class="bg-gradient-to-r from-[#3B8EFF] to-[#235599] bg-clip-text text-transparent  ">Teman</span> Saat ini</h1>
         </div>
         <div class="md:max-w-4xl max-w-5xl mx-auto overflow-hidden justify-center rounded-3xl">
           <div class="">
@@ -245,7 +244,7 @@
     <section class="w-full py-20 bg-white">
       <div class="">
         <h2 class="text-3xl font-bold text-center mb-12">
-          Apa yang <span class="text-blue-500">Teman</span> rasakan?
+          Apa yang <span class="bg-gradient-to-r from-[#3B8EFF] to-[#235599] bg-clip-text text-transparent">Teman</span> rasakan?
         </h2>
 
         <div id="rating" class="flex gap-10 overflow-x-auto overflow-y-hidden py-20 h-115 scroll-smooth select-none">
@@ -350,6 +349,11 @@
     </section>
   </main>
 
+  <!-- Rating Start -->
+
+
+  <!-- Footer Start -->
+   
   <footer id="footer">
     <div
       class="bg-gradient-to-b from-[#3B8EFF] to-[#235599] rounded-tl-4xl rounded-tr-4xl flex gap-20 px-15 py-15 text-white justify-evenly">
@@ -391,6 +395,8 @@
       </div>
     </div>
   </footer>
+
+  <!-- footer end -->
 
   <script src="javascript/main.js"></script>
   <script src="javascript/rating.js"></script>

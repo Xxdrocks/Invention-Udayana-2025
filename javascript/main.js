@@ -1,8 +1,4 @@
-//Permainan daya ingat
-
-
-
-//Bagaimana Perasaan Teman Saat ini
+//Permainan Drag Start
 
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
@@ -191,5 +187,7 @@ canvas.addEventListener("mouseup", () => {
 
 init();
 animate();
+
+// Permainan Drag End
 
 

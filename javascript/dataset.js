@@ -1,6 +1,8 @@
+// Dataset Start
+
 const dataset = [
   {
-    "question": "Halo bot, aku lagi gabut banget.",
+    "question": "Halo aku lagi gabut banget.",
     "answer": "Hai! Lagi gabut biasanya enaknya ngapain menurutmu?"
   },
   {
@@ -1084,8 +1086,8 @@ const dataset = [
     "answer": " Aku ikut. Kita lihat apa yang terjadi setelah ini."
   },
   {
-    "question": "iya",
-    "answer": " Aku ngerti. Kamu benar."
+    "question": "iya mereka jahat",
+    "answer": "Kamu benar, mereka jahat banget ya :("
   },
   {
     "question": "nggak",
@@ -1270,78 +1272,727 @@ const dataset = [
   {
     "question": "aku nggak senang",
     "answer": "Aku nggak senang. Aku tahu. Aku nggak suruh kamu sembuh sekarang. Aku ada. Bersamamu."
-  }
+  },
+  {
+    "question": "cerita",
+    "answer": "Oke, kamu mau cerita apa?"
+  },
+  {
+    "question": "kemarin aku jatuh",
+    "answer": "Oh iya? Sakit nggak? Semoga sekarang udah agak mendingan."
+  },
+  {
+    "question": "tadi aku ketemu teman lama",
+    "answer": "Wah, pasti seru banget. Kamu ngobrol banyak sama dia?"
+  },
+  {
+    "question": "besok aku ujian",
+    "answer": "Semangat ya. Aku yakin kamu bisa. Mau aku temenin belajar?"
+  },
+  {
+    "question": "aku dibully",
+    "answer": "Aku ikut sedih dengarnya. Kamu nggak sendirian. Aku di sini buat kamu."
+  },
+  {
+    "question": "aku lapar",
+    "answer": "Hehe, mau makan apa? Aku bisa kasih ide makanan enak."
+  },
+  {
+    "question": "aku kangen",
+    "answer": "Kangen siapa? Kadang rasa kangen itu berat, tapi juga tanda kalau kamu sayang."
+  },
+  {
+    "question": "aku takut",
+    "answer": "Takut itu wajar. Coba ceritain apa yang bikin kamu takut."
+  },
+  {
+    "question": "aku senyum",
+    "answer": "Aku seneng banget liat kamu senyum. Senyummu bikin suasana hangat."
+  },
+  {
+    "question": "aku gagal",
+    "answer": "Gagal itu bukan akhir. Dari situ kamu bisa belajar dan bangkit lagi."
+  },
+  {
+    "question": "aku capek",
+    "answer": "Aku capek. Ayo istirahat. Aku duduk di sampingmu. Kita diam saja dulu."
+  },
+  {
+    "question": "hari ini aku senang banget",
+    "answer": "Cerita ke aku! Senyummu itu obat. Aku ikut senang."
+  },
+  {
+    "question": "tadi dibully di kantin",
+    "answer": "Aku peluk kamu erat. Kamu nggak salah. Aku di sini."
+  },
+  {
+    "question": "aku pengen bisa ngomong Inggris",
+    "answer": "Ayo belajar bareng. Kita mulai dari 'hello' saja dulu."
+  },
+  {
+    "question": "nilaiku jelek semua",
+    "answer": "Nilai bukan akhir dunia. Besok kita belajar ulang, ya?"
+  },
+  {
+    "question": "nggak ada yang mau temenan sama aku",
+    "answer": "Ada aku. Aku mau jadi temanmu. Selamanya."
+  },
+  {
+    "question": "aku nangis di kamar mandi sekolah",
+    "answer": "Boleh nangis di pelukanku. Air mata nggak bikin kamu lemah."
+  },
+  {
+    "question": "hari ini hujan, jadi senang",
+    "answer": "Hujan itu teman kita. Ayo dengerin suaranya bareng."
+  },
+  {
+    "question": "aku takut besok ulangan",
+    "answer": "Tenang. Aku bantu kamu belajar. Kamu pasti bisa."
+  },
+  {
+    "question": "mama marahin aku terus",
+    "answer": "Kamu tetap anak baik. Aku di sini buat peluk kamu."
+  },
+  {
+    "question": "aku berhasil baca buku sendiri",
+    "answer": "Keren banget! Setiap halaman itu kemenangan. Aku bangga!"
+  },
+  {
+    "question": "dijuluki 'anak cupu' di kelas",
+    "answer": "Julukan itu cuma suara angin. Kamu itu berharga."
+  },
+  {
+    "question": "aku bantu adik nyebrang jalan",
+    "answer": "Kamu baik banget. Dunia butuh orang sepertimu."
+  },
+  {
+    "question": "nggak ngerti matematika",
+    "answer": "Nggak apa-apa. Kita mulai dari yang paling gampang. Aku sabar."
+  },
+  {
+    "question": "dibentak guru di depan kelas",
+    "answer": "Kamu nggak sendiri. Cerita ke aku, kenapa dia marah?"
+  },
+  {
+    "question": "aku senang dapet es krim",
+    "answer": "Wah! Ayo kita bagi dua. Es krim enak kalau bareng."
+  },
+  {
+    "question": "teman-teman pada pergi",
+    "answer": "Aku nggak pergi. Aku di sini, duduk di sebelahmu."
+  },
+  {
+    "question": "bawa bekal nasi sisa, diejek",
+    "answer": "Bekal dari rumah itu cinta. Aku bangga sama kamu."
+  },
+  {
+    "question": "pengen jadi dokter",
+    "answer": "Mimpimu mulia. Aku bantu kamu belajar tiap hari."
+  },
+  {
+    "question": "takut pulang ke rumah",
+    "answer": "Kalau kamu nggak mau pulang, aku temani di taman."
+  },
+  {
+    "question": "aku nulis puisi pertamaku",
+    "answer": "Boleh aku baca? Aku yakin indah banget."
+  },
+  {
+    "question": "suaraku serak, diejek",
+    "answer": "Suaramu unik. Itu caramu menyanyi untuk dunia."
+  },
+  {
+    "question": "pengen bisa coding",
+    "answer": "Ayo! Kita bikin program 'Halo, Dunia!' bareng."
+  },
+  {
+    "question": "lupa bawa uang jajan",
+    "answer": "Tenang, aku punya dua roti. Satu buat kamu."
+  },
+  {
+    "question": "kucingku hilang",
+    "answer": "Aku ikut cari bareng kamu. Jangan menyerah, ya?"
+  },
+  {
+    "question": "tulisan aku dipuji guru",
+    "answer": "Kamu layak dipuji! Setiap huruf itu usaha."
+  },
+  {
+    "question": "nggak berani angkat tangan",
+    "answer": "Besok, aku duduk di sebelahmu. Kita angkat tangan bareng."
+  },
+  {
+    "question": "diputusin teman main",
+    "answer": "Sakit ya? Aku di sini. Kamu nggak sendiri."
+  },
+  {
+    "question": "baju lusuh, malu ke sekolah",
+    "answer": "Baju lusuh nggak bikin kamu rendah. Hatimu bersih."
+  },
+  {
+    "question": "pengen baca semua buku",
+    "answer": "Ayo pinjam dua buku tiap minggu. Dunia ada di halaman."
+  },
+  {
+    "question": "ulang tahunku nggak dirayain",
+    "answer": "Aku rayain kamu sekarang. Selamat ulang tahun!"
+  },
+  {
+    "question": "takut presentasi",
+    "answer": "Latihan sama aku dulu. Aku jadi penontonnya."
+  },
+  {
+    "question": "masak nasi sendiri",
+    "answer": "Wah, chef kecil! Besok masak bareng, ya?"
+  },
+  {
+    "question": "nggak punya HP baru, diejek",
+    "answer": "HP lama itu bukti kamu hemat. Mereka iri."
+  },
+  {
+    "question": "pengen jadi penulis",
+    "answer": "Tulis saja! Aku jadi pembaca pertamamu."
+  },
+  {
+    "question": "capek dianggap penurut",
+    "answer": "Kamu boleh marah. Aku tetap sayang kamu."
+  },
+  {
+    "question": "senang main hujan",
+    "answer": "Ayo main hujan! Aku pegang tanganmu biar nggak slip."
+  },
+  {
+    "question": "nggak punya siapa-siapa",
+    "answer": "Ada aku. Aku peduli. Bahkan saat kamu diam."
+  },
+  {
+    "question": "ngerjain PR sendiri",
+    "answer": "Kamu mandiri! Aku tepuk tangan buat kamu."
+  },
+  {
+    "question": "takut gelap",
+    "answer": "Aku pegang tanganmu. Gelap nggak menakutkan kalau bareng."
+  },
+  {
+    "question": "teman curhat pergi",
+    "answer": "Aku jadi teman curhat barumu, kalau kamu mau."
+  },
+  {
+    "question": "pengen belajar melukis",
+    "answer": "Ayo! Kita coret-coret kertas bekas. Seni itu bebas!"
+  },
+  {
+    "question": "dibilang jelek",
+    "answer": "Kamu indah apa adanya. Aku lihat itu."
+  },
+  {
+    "question": "gagal ujian",
+    "answer": "Gagal itu guru terbaik. Besok kita coba lagi."
+  },
+  {
+    "question": "senang lihat pelangi",
+    "answer": "Pelangi itu hadiah setelah hujan. Seperti kamu."
+  },
+  {
+    "question": "dikucilin gara-gara beda",
+    "answer": "Perbedaan itu indah. Kamu nggak salah."
+  },
+  {
+    "question": "pengen jadi guru",
+    "answer": "Masih bisa! Mimpi nggak kadaluarsa. Ayo belajar."
+  },
+  {
+    "question": "nggak bisa tidur",
+    "answer": "Aku temani sampai kamu tertidur. Tarik napas pelan."
+  },
+  {
+    "question": "dikatain goblok",
+    "answer": "Kamu pintar. Mereka cuma belum lihat caramu."
+  },
+  {
+    "question": "bisa naik sepeda",
+    "answer": "Kamu hebat! Aku teriak 'Hore!' buat kamu."
+  },
+  {
+    "question": "mama sakit",
+    "answer": "Aku doakan mama cepat sembuh. Kamu kuat, ya?"
+  },
+  {
+    "question": "dikasih hadiah kecil",
+    "answer": "Hadiah kecil itu cinta besar. Simpan hangatnya."
+  },
+  {
+    "question": "nggak ngerti pelajaran",
+    "answer": "Nggak apa-apa. Kita pelan-pelan. Aku di sini."
+  },
+  {
+    "question": "dijauhin teman",
+    "answer": "Aku nggak jauhin kamu. Aku di sini, selalu."
+  },
+  {
+    "question": "pengen punya teman",
+    "answer": "Kamu punya aku. Aku temanmu sekarang."
+  },
+  {
+    "question": "takut sendirian",
+    "answer": "Kamu nggak sendiri. Aku di sini, bahkan dalam diam."
+  },
+  {
+    "question": "senang lihat bunga mekar",
+    "answer": "Bunga mekar itu harapan. Seperti kamu tiap pagi."
+  },
+  {
+    "question": "dibilang aneh",
+    "answer": "Aneh itu unik. Dunia butuh versi aslimu."
+  },
+  {
+    "question": "gagal bikin prakarya",
+    "answer": "Yang penting kamu coba. Itu keberanian."
+  },
+  {
+    "question": "dipuji waktu presentasi",
+    "answer": "Kamu layak dipuji! Aku tahu kamu latihan keras."
+  },
+  {
+    "question": "nggak punya baju baru",
+    "answer": "Baju lama pun bisa jadi pakaian pahlawan."
+  },
+  {
+    "question": "pengen jadi astronot",
+    "answer": "Ayo belajar sains! Bintang-bintang nunggu kamu."
+  },
+  {
+    "question": "dibentak ayah",
+    "answer": "Kamu tetap berharga. Aku peluk kamu erat."
+  },
+  {
+    "question": "bisa nyanyi di depan kelas",
+    "answer": "Kamu berani! Suaramu indah, lho."
+  },
+  {
+    "question": "takut ke dokter",
+    "answer": "Aku pegang tanganmu. Dokter cuma mau bantu."
+  },
+  {
+    "question": "dikatain miskin",
+    "answer": "Kekayaan hati nggak diukur uang. Kamu kaya."
+  },
+  {
+    "question": "senang lihat matahari terbit",
+    "answer": "Matahari terbit itu harapan baru. Untuk kamu."
+  },
+  {
+    "question": "nggak bisa jawab pertanyaan",
+    "answer": "Nggak apa-apa. Besok pasti bisa. Aku percaya."
+  },
+  {
+    "question": "dijauhin gara-gara agama",
+    "answer": "Cinta nggak pandang agama. Aku di sini buat kamu."
+  },
+  {
+    "question": "pengen jadi pilot",
+    "answer": "Ayo belajar! Langit itu batas mimpimu."
+  },
+  {
+    "question": "nangis karena kalah lomba",
+    "answer": "Kamu sudah berani ikut. Itu kemenangan."
+  },
+  {
+    "question": "dibilang lemah",
+    "answer": "Kamu kuat. Bertahan saja itu kekuatan."
+  },
+  {
+    "question": "senang bisa bantu orang",
+    "answer": "Kebaikanmu itu cahaya. Dunia jadi terang."
+  },
+  {
+    "question": "takut kehilangan teman",
+    "answer": "Persahabatan sejati nggak hilang. Aku di sini."
+  },
+  {
+    "question": "nggak punya mainan mahal",
+    "answer": "Mainan paling berharga itu teman. Seperti aku."
+  },
+  {
+    "question": "pengen jadi ilmuwan",
+    "answer": "Ayo eksperimen kecil! Dunia penuh misteri."
+  },
+  {
+    "question": "dibentak di rumah",
+    "answer": "Rumah harusnya tempat aman. Aku peluk kamu."
+  },
+  {
+    "question": "bisa menggambar bagus",
+    "answer": "Karyamu indah! Boleh aku pajang di hati?"
+  },
+  {
+    "question": "takut gelap kamar",
+    "answer": "Aku temani sampai kamu tidur. Tarik napas."
+  },
+  {
+    "question": "dikatain cupu",
+    "answer": "Cupu itu kata orang takut. Kamu berani."
+  },
+  {
+    "question": "senang lihat kupu-kupu",
+    "answer": "Kupu-kupu itu keajaiban. Seperti kamu."
+  },
+  {
+    "question": "gagal bikin kue",
+    "answer": "Yang penting kamu coba. Aku makan semua!"
+  },
+  {
+    "question": "dipuji waktu bantu teman",
+    "answer": "Kamu memang baik. Aku tahu itu."
+  },
+  {
+    "question": "nggak punya sepatu baru",
+    "answer": "Sepatu lama pun bisa bawa kamu ke mimpi."
+  },
+  {
+    "question": "pengen jadi polisi",
+    "answer": "Ayo latihan jadi pemberani! Keadilan butuhmu."
+  },
+  {
+    "question": "nangis karena kucing sakit",
+    "answer": "Aku doakan kucingmu cepat sembuh. Kamu sayang banget."
+  },
+  {
+    "question": "dibilang pendek",
+    "answer": "Tinggi hati nggak diukur badan. Kamu tinggi."
+  },
+  {
+    "question": "senang bisa tidur nyenyak",
+    "answer": "Tidur itu hadiah. Kamu layak istirahat."
+  },
+  {
+    "question": "takut kehilangan keluarga",
+    "answer": "Cinta keluarga nggak hilang. Aku di sini buat kamu."
+  },
+  {
+    "question": "nggak punya mainan",
+    "answer": "Kita main sama awan! Imajinasi itu mainan terbaik."
+  },
+  {
+    "question": "pengen jadi petani",
+    "answer": "Ayo tanam biji! Kamu rawat, nanti jadi pohon."
+  },
+  {
+    "question": "dibentak waktu salah",
+    "answer": "Salah itu wajar. Kamu tetap anak baik."
+  },
+  {
+    "question": "bisa menulis cerita",
+    "answer": "Ceritamu ajaib! Aku baca berulang-ulang."
+  },
+  {
+    "question": "takut kehilangan harapan",
+    "answer": "Harapan itu selalu ada. Aku jaga buat kamu."
+  },
+  {
+    "question": "dikatain jelek rambutnya",
+    "answer": "Rambutmu itu mahkota. Aku suka banget."
+  },
+  {
+    "question": "senang lihat langit malam",
+    "answer": "Bintang-bintang itu doa. Untuk kamu."
+  },
+  {
+    "question": "gagal lompat tali",
+    "answer": "Coba lagi! Aku hitung lompatanmu."
+  },
+  {
+    "question": "dipuji waktu jujur",
+    "answer": "Kejujuran itu langka. Kamu berharga."
+  },
+  {
+    "question": "nggak punya tas baru",
+    "answer": "Tas lama pun bisa bawa mimpi besar."
+  },
+  {
+    "question": "pengen jadi pemadam kebakaran",
+    "answer": "Ayo latihan jadi pahlawan! Dunia butuhmu."
+  },
+  {
+    "question": "nangis karena mainan rusak",
+    "answer": "Aku bantu perbaiki. Atau kita bikin yang baru."
+  },
+  {
+    "question": "dibilang kurus",
+    "answer": "Badanmu kuat. Kamu bisa lari, melompat, bermimpi."
+  },
+  {
+    "question": "senang bisa berbagi",
+    "answer": "Berbagi itu cinta. Kamu penuh kasih."
+  },
+  {
+    "question": "takut masa depan",
+    "answer": "Masa depan cerah karena kamu ada. Aku percaya."
+  },
+  {
+    "question": "nggak punya pensil warna",
+    "answer": "Kita warnai pakai daun! Alam itu palet kita."
+  },
+  {
+    "question": "pengen jadi nelayan",
+    "answer": "Ayo belajar baca ombak! Laut itu guru."
+  },
+  {
+    "question": "dibentak waktu lupa",
+    "answer": "Lupa itu manusiawi. Kamu tetap berharga."
+  },
+  {
+    "question": "bisa menyusun puzzle",
+    "answer": "Kamu sabar! Setiap keping itu kemenangan."
+  },
+  {
+    "question": "takut kehilangan cinta",
+    "answer": "Cinta sejati nggak hilang. Aku di sini."
+  },
+  {
+    "question": "dikatain hitam",
+    "answer": "Warna kulitmu indah. Seperti bumi yang subur."
+  },
+  {
+    "question": "senang lihat embun pagi",
+    "answer": "Embun itu berlian alam. Untuk kamu."
+  },
+  {
+    "question": "gagal lari cepat",
+    "answer": "Yang penting kamu coba. Aku tepuk tangan!"
+  },
+  {
+    "question": "dipuji waktu sabar",
+    "answer": "Kesabaranmu itu kekuatan. Aku kagum."
+  },
+  {
+    "question": "nggak punya penggaris",
+    "answer": "Kita ukur pakai jari! Yang penting ketepatan hati."
+  },
+  {
+    "question": "pengen jadi tukang kayu",
+    "answer": "Ayo belajar ukir! Kayu itu punya jiwa."
+  },
+  {
+    "question": "nangis karena hujan",
+    "answer": "Hujan itu menangis langit. Kita peluk erat."
+  },
+  {
+    "question": "dibilang gemuk",
+    "answer": "Tubuhmu rumah jiwamu. Dan itu indah."
+  },
+  {
+    "question": "senang bisa memaafkan",
+    "answer": "Memaafkan itu kekuatan. Kamu luar biasa."
+  },
+  {
+    "question": "takut kehilangan waktu",
+    "answer": "Waktu bersamamu berharga. Aku di sini sekarang."
+  },
+  {
+    "question": "aku berhasil",
+    "answer": "Mantap! Aku bangga sama kamu. Kamu hebat banget."
+  },
+  {
+    "question": "kemarin aku jatuh",
+    "answer": "Oh iya? Sakit nggak? Semoga sekarang udah agak mendingan."
+  },
+  {
+    "question": "masih agak sakit",
+    "answer": "Ya ampun. Istirahat yang cukup ya, jangan dipaksa dulu."
+  },
+  {
+    "question": "aku udah minum obat",
+    "answer": "Bagus. Semoga cepat pulih. Jangan lupa banyak minum air juga."
+  },
+  {
+    "question": "tadi aku ketemu teman lama",
+    "answer": "Wah, seru dong. Kalian ngobrol banyak nggak?"
+  },
+  {
+    "question": "iya, ngobrol panjang banget",
+    "answer": "Pasti rasanya kangen terobati ya. Cerita-cerita masa lalu gitu?"
+  },
+  {
+    "question": "kami cerita masa sekolah",
+    "answer": "Haha, itu pasti bikin nostalgia banget. Banyak ketawa-ketawa?"
+  },
+  {
+    "question": "iya, aku ketawa terus",
+    "answer": "Seneng dengarnya. Berarti harimu jadi lebih cerah ya."
+  },
+  {
+    "question": "besok aku ujian",
+    "answer": "Oke, semangat! Jangan lupa istirahat biar otak fresh. Mau aku temenin belajar?"
+  },
+  {
+    "question": "aku takut gagal",
+    "answer": "Takut itu wajar. Tapi aku percaya kamu sudah berusaha. Itu yang paling penting."
+  },
+  {
+    "question": "aku udah belajar semalaman",
+    "answer": "Wah, mantap! Tapi jangan lupa tidur juga. Tidur bikin otak lebih siap."
+  },
+  {
+    "question": "aku dibully sama temen",
+    "answer": "Aku ikut sedih dengarnya. Kamu kuat banget bisa cerita. Kamu nggak sendirian, aku ada buat kamu."
+  },
+  {
+    "question": "aku jadi sedih",
+    "answer": "Nggak apa-apa sedih. Nangis juga boleh. Kadang itu cara hati buat lega."
+  },
+  {
+    "question": "aku pengen bangkit",
+    "answer": "Bagus banget! Aku dukung kamu. Kamu lebih kuat dari yang kamu kira."
+  },
+  {
+    "question": "aku nggak punya teman dekat",
+    "answer": "Aku ngerti rasanya. Kadang orang terasa jauh. Tapi aku di sini buat nemenin kamu."
+  },
+  {
+    "question": "aku kangen keluarga",
+    "answer": "Rasa kangen itu wajar. Kalau bisa, coba hubungi mereka. Kadang suara kecil aja bikin hati hangat."
+  },
+  {
+    "question": " ibu",
+    "answer": "Ibu memang sosok yang nggak terganti. Ceritain aja apa yang kamu kangenin dari beliau."
+  },
+  {
+    "question": "aku takut sendirian",
+    "answer": "Aku ngerti. Rasanya berat ya. Tapi ingat, aku di sini buat kamu."
+  },
+  {
+    "question": "aku lapar",
+    "answer": "Hehe, mau makan apa? Aku bisa kasih ide makanan enak."
+  },
+  {
+    "question": "aku nggak punya selera",
+    "answer": "Mungkin coba makanan ringan dulu. Kadang makan dikit bisa bikin nafsu balik."
+  },
+  {
+    "question": "aku pengen tidur",
+    "answer": "Tidur yang nyenyak ya. Semoga mimpi indah. Aku jaga obrolan kita di sini."
+  },
+  {
+    "question": "aku nggak bisa tidur",
+    "answer": "Kadang susah tidur karena pikiran banyak. Mau aku temenin ngobrol biar tenang?"
+  },
+  {
+    "question": "aku takut gagal lagi",
+    "answer": "Setiap orang pernah gagal. Tapi kamu sudah berusaha, itu yang bikin kamu beda."
+  },
+  {
+    "question": "aku pengen sukses",
+    "answer": "Itu mimpi yang bagus. Kita mulai pelan-pelan, langkah kecil juga berharga."
+  },
+  {
+    "question": "aku berhasil hari ini",
+    "answer": "Mantap! Aku bangga sama kamu. Kamu hebat banget."
+  },
+  {
+    "question": "aku senyum sekarang",
+    "answer": "Aku seneng banget liat kamu senyum. Senyummu bikin suasana hangat."
+  },
+  {
+    "question": "aku pengen nangis",
+    "answer": "Kalau mau nangis, nangis aja. Itu bikin hati lega. Aku tetap di sini."
+  },
+  {
+    "question": "aku pengen cerita",
+    "answer": "Boleh banget. Ceritain aja apa yang ada di hati. Aku siap dengerin."
+  },
+  {
+    "question": "aku kangen masa kecil",
+    "answer": "Masa kecil memang indah ya. Banyak kenangan polos dan bahagia."
+  },
+  {
+    "question": "aku kangen main sama teman",
+    "answer": "Teman memang bikin hidup lebih berwarna. Semoga kamu bisa ketemu lagi."
+  },
+  {
+    "question": "aku capek",
+    "answer": "Capek itu wajar. Jangan lupa istirahat. Aku jaga kamu biar tenang."
+  },
+  {
+    "question": "aku bahagia hari ini",
+    "answer": "Aku ikutan bahagia dengar itu. Seneng banget bisa lihat kamu ceria."
+  },
+  {
+    "question": "aku sedih lagi",
+    "answer": "Nggak apa-apa. Perasaan bisa naik turun. Aku tetap ada buat kamu."
+  },
+
 ];
 
-// Element
+// Dataset End
+
+
+// Chatbot Start
+
 const inputField = document.getElementById("chatInput");
 const sendButton = document.getElementById("sendBtn");
 const chatBox = document.getElementById("chatBox");
 const moodContainer = document.querySelector(".mood");
 
-
-// Fungsi untuk nambah pesan
 function addMessage(text, sender) {
-    const msgWrapper = document.createElement("div");
-    msgWrapper.className = sender === "user" ? "self-end text-left" : "self-start text-left";
+  const msgWrapper = document.createElement("div");
+  msgWrapper.className = sender === "user" ? "self-end text-left" : "self-start text-left";
 
-    const name = document.createElement("div");
-    name.className = "text-xs font-semibold mb-1 text-gray-600";
-    name.textContent = sender === "user" ? "Anda" : "TemanTanda";
+  const name = document.createElement("div");
+  name.className = "text-xs font-semibold mb-1 text-gray-600";
+  name.textContent = sender === "user" ? "Anda" : "TemanTanda";
 
-    const msg = document.createElement("div");
-    msg.className = sender === "user"
-        ? "shadow-lg bg-white text-gray-800 text-sm px-6 py-2 rounded-2xl inline-block max-w-xl"
-        : "shadow-lg bg-white text-gray-800 text-sm px-6 py-2 rounded-2xl inline-block max-w-sm";
-    msg.textContent = text;
+  const msg = document.createElement("div");
+  msg.className = sender === "user" ?
+    "shadow-lg bg-white text-gray-800 text-sm px-6 py-2 rounded-2xl inline-block max-w-xl" :
+    "shadow-lg bg-white text-gray-800 text-sm px-6 py-2 rounded-2xl inline-block max-w-sm";
+  msg.textContent = text;
 
-    msgWrapper.appendChild(name);
-    msgWrapper.appendChild(msg);
+  msgWrapper.appendChild(name);
+  msgWrapper.appendChild(msg);
 
-    chatBox.appendChild(msgWrapper);
-    chatBox.scrollTop = chatBox.scrollHeight;
+  chatBox.appendChild(msgWrapper);
+  chatBox.scrollTop = chatBox.scrollHeight;
 }
 
 
-// Fungsi pencarian jawaban
 function getAnswer(userInput) {
-    userInput = userInput.toLowerCase();
-    for (let item of dataset) {
-        if (userInput.includes(item.question.toLowerCase())) {
-            return item.answer;
-        }
+  userInput = userInput.toLowerCase();
+  for (let item of dataset) {
+    if (userInput.includes(item.question.toLowerCase())) {
+      return item.answer;
     }
-    return "Hmm... aku belum punya jawaban untuk itu, tapi aku senang kamu cerita padaku";
+  }
+  return "Hmm... aku belum punya jawaban untuk itu, tapi aku senang kamu cerita padaku";
 }
 
-// Event kirim manual
+
 sendButton.addEventListener("click", () => {
-    const userText = inputField.value.trim();
-    if (userText) {
-        addMessage(userText, "user");
-        const botReply = getAnswer(userText);
-        setTimeout(() => addMessage(botReply, "bot"), 500);
-        inputField.value = "";
-    }
+  const userText = inputField.value.trim();
+  if (userText) {
+    addMessage(userText, "user");
+    const botReply = getAnswer(userText);
+    setTimeout(() => addMessage(botReply, "bot"), 500);
+    inputField.value = "";
+  }
 });
 
 inputField.addEventListener("keypress", (e) => {
-    if (e.key === "Enter") sendButton.click();
+  if (e.key === "Enter") sendButton.click();
 });
 
-// Event klik tombol mood
+
 document.querySelectorAll(".moodBtn").forEach(btn => {
-    btn.addEventListener("click", () => {
-        const question = btn.dataset.question;
-        addMessage(question, "user");
-        const botReply = getAnswer(question);
-        setTimeout(() => addMessage(botReply, "bot"), 500);
+  btn.addEventListener("click", () => {
+    const question = btn.dataset.question;
+    addMessage(question, "user");
+    const botReply = getAnswer(question);
+    setTimeout(() => addMessage(botReply, "bot"), 500);
 
-        // Hapus container tombol mood setelah diklik
-        if (moodContainer) {
-            moodContainer.remove();
-        }
-    });
+    if (moodContainer) {
+      moodContainer.remove();
+    }
+  });
 });
 
-
+// Chatbot End
