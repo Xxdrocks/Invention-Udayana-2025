@@ -169,6 +169,61 @@ body {
   height: 100vh;
 }
 
+
+#popUp {
+  animation: fadeIn 0.3s ease-out;
+}
+
+#popUp > div {
+  animation: scaleUp 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#popUpImage {
+  animation: bounce 0.6s ease-in-out 0.3s;
+}
+
+#popUp.hidden {
+  display: none;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+
 @keyframes slide {
   from {
     width: 0;

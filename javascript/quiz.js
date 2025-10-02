@@ -87,8 +87,12 @@ function showPopUp(imgPath) {
 }
 
 closePopUp.onclick = () => {
-    popUp.classList.add("hidden");
-    LoadSoalList();
+    popUp.style.animation = "fadeIn 0.2s ease-out reverse";
+    setTimeout(() => {
+        popUp.classList.add("hidden");
+        popUp.style.animation = ""; // Reset animation
+        LoadSoalList();
+    }, 200);
 }
 
 selanjutnyaBtn.onclick = () => {

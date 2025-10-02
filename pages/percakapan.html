@@ -1,76 +1,59 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Papan Bantuan</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    .dragging {
-      opacity: 0.5;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Percakapan Dasar</title>
+
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- GoogleFonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
 </head>
-<body class="flex items-center justify-center min-h-screen bg-gradient-to-b from-blue-400 to-blue-600">
 
-  <div class="bg-blue-200 rounded-2xl p-6 w-[700px] shadow-xl">
-    <!-- Header -->
-    <div class="flex justify-between items-center mb-6">
-      <button class="text-white font-bold">Kembali</button>
-      <h1 class="bg-blue-400 px-4 py-2 rounded-xl text-white font-bold shadow">
-        PAPAN BANTUAN
-      </h1>
+<body>
+  <section class="blueBackground h-full w-full overflow-y-hidden">
+    <div class="p-5 m-5 flex justify-between">
+      <button onclick="window.location.href = './pemilihan.html'"
+        class="flex text-center items-center font-poppins font-semibold gap-2 cursor-pointer">
+        <img src="../assets/images/icon/arrow-left2.png" alt="" class="w-[20px]" />
+        <h1 class="text-xl text-white">Kembali</h1>
+      </button>
+
+      <img src="../assets/images/card/title.png" alt="" class="right-10 top-5 h-[90px] absolute">
     </div>
 
-    <!-- Papan kalimat -->
-    <div id="sentenceBoard" class="flex gap-4 min-h-[60px] bg-blue-300 rounded-xl p-4 justify-center items-center mb-6">
-      <!-- kata akan ditaruh disini -->
+    <div class="flex items-center justify-center mt-10">
+      <div class="bg-[#8EC3F7] rounded-2xl p-10 w-[700px] shadow-xl">
+        <div id="inputBox"
+          class="flex flex-wrap gap-4 min-h-[60px] bg-[#346CA3] rounded-xl p-4 justify-center items-center mb-6 max-w-[600px] mx-auto">
+        </div>
+        <div id="pilihKondisi" class="flex flex-wrap gap-4 justify-center pt-5">
+          <img src="../assets/images/card/game/PapanBantuan/10.png" alt="" class="cursor-move object-cover w-auto h-[60px]" />
+          <img src="../assets/images/card/game/PapanBantuan/11.png" alt="" class="cursor-move object-cover w-auto h-[60px]" />
+          <img src="../assets/images/card/game/PapanBantuan/12.png" alt="" class="cursor-move object-cover w-auto h-[60px]" />
+          <img src="../assets/images/card/game/PapanBantuan/13.png" alt="" class="cursor-move object-cover w-auto h-[60px]" />
+          <img src="../assets/images/card/game/PapanBantuan/14.png" alt="" class="cursor-move object-cover w-auto h-[60px]" />
+          <img src="../assets/images/card/game/PapanBantuan/15.png" alt="" class="cursor-move object-cover w-auto h-[60px]" />
+          <img src="../assets/images/card/game/PapanBantuan/16.png" alt="" class="cursor-move object-cover w-auto h-[60px]" />
+          <img src="../assets/images/card/game/PapanBantuan/17.png" alt="" class="cursor-move object-cover w-auto h-[60px]" />
+          <img src="../assets/images/card/game/PapanBantuan/18.png" alt="" class="cursor-move object-cover w-auto h-[60px]" />
+          <img src="../assets/images/card/game/PapanBantuan/19.png" alt="" class="cursor-move object-cover w-auto h-[60px]" />
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- Pilihan kata -->
-    <div id="wordBank" class="flex flex-wrap gap-4 justify-center">
-      <div draggable="true" class="bg-white px-4 py-2 rounded-xl shadow font-bold text-blue-600 cursor-move">SAYA</div>
-      <div draggable="true" class="bg-white px-4 py-2 rounded-xl shadow font-bold text-blue-600 cursor-move">LAPAR</div>
-      <div draggable="true" class="bg-white px-4 py-2 rounded-xl shadow font-bold text-blue-600 cursor-move">HAUS</div>
-      <div draggable="true" class="bg-white px-4 py-2 rounded-xl shadow font-bold text-blue-600 cursor-move">CAPEK</div>
-      <div draggable="true" class="bg-white px-4 py-2 rounded-xl shadow font-bold text-blue-600 cursor-move">BUTUH BANTUAN</div>
-      <div draggable="true" class="bg-white px-4 py-2 rounded-xl shadow font-bold text-blue-600 cursor-move">INGIN KE TOILET</div>
-      <div draggable="true" class="bg-white px-4 py-2 rounded-xl shadow font-bold text-blue-600 cursor-move">BINGUNG</div>
-      <div draggable="true" class="bg-white px-4 py-2 rounded-xl shadow font-bold text-blue-600 cursor-move">SAKIT</div>
-      <div draggable="true" class="bg-white px-4 py-2 rounded-xl shadow font-bold text-blue-600 cursor-move">BUTUH ISTIRAHAT</div>
-    </div>
-  </div>
 
-  <script>
-    const words = document.querySelectorAll('#wordBank div, #sentenceBoard div');
-    const sentenceBoard = document.getElementById('sentenceBoard');
-    const wordBank = document.getElementById('wordBank');
-
-    let draggedItem = null;
-
-    document.querySelectorAll('[draggable="true"]').forEach(word => {
-      word.addEventListener('dragstart', () => {
-        draggedItem = word;
-        word.classList.add('dragging');
-      });
-
-      word.addEventListener('dragend', () => {
-        draggedItem = null;
-        word.classList.remove('dragging');
-      });
-    });
-
-    [sentenceBoard, wordBank].forEach(board => {
-      board.addEventListener('dragover', e => {
-        e.preventDefault();
-      });
-
-      board.addEventListener('drop', e => {
-        if (draggedItem) {
-          board.appendChild(draggedItem);
-        }
-      });
-    });
-  </script>
+  <script src="../javascript/papanbantuan.js"></script>
 </body>
+
 </html>
