@@ -1,3 +1,30 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.getElementById('hamburger');
+  const menu = document.getElementById('menu');
+
+  if (!hamburger || !menu) return;
+
+  hamburger.addEventListener('click', (e) => {
+    e.stopPropagation();
+    menu.classList.remove('hidden');
+  });
+
+  menu.addEventListener('click', (e) => {
+    if (e.target === menu) {
+      menu.classList.add('hidden');
+    }
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !menu.contains(e.target)) {
+      menu.classList.add('hidden');
+    }
+  });
+});
+// Navbar Log End
+
+
+
 //Permainan Drag Start
 
 const canvas = document.getElementById("canvas");

@@ -34,6 +34,18 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+#loginContent.active {
+  height: 10vh;
+  padding: 14px;
+}
+
+#loginContent {
+  height: 0;
+  padding: 0;
+  transition: all 0.3s ease-in-out;
+  overflow-y: hidden;
+}
+
 .typeAnimation {
   white-space: nowrap;
   overflow: hidden;
@@ -43,7 +55,7 @@ body {
 .searchButton {
   display: flex;
   align-items: center;
-  position: relative; /* agar absolute input tetap dalam konteks ini */
+  position: relative; 
   width: 100%;
 }
 
@@ -104,11 +116,8 @@ body {
 }
 
 .card {
-  height: 250px;
-  width: 200px;
-  cursor: pointer;
-  position: relative;
   perspective: 900px;
+  transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.4s ease;
 }
 
 .card > * {
@@ -185,6 +194,10 @@ body {
 #popUp.hidden {
   display: none;
 }
+
+.slide {
+  animation: slide 1s ease-in-out;
+} 
 
 
 @keyframes fadeIn {
