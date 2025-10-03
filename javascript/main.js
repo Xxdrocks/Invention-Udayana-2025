@@ -40,7 +40,7 @@ const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
 canvas.width = window.innerWidth;
-canvas.height = 380;
+canvas.height = 450;
 
 const tags = ["Malu", "Cemas", "Sedih", "Senang", "Marah", "Bosan", "Pusing", "Takut"];
 const colors = ["#E366B4", "#ED9A3B", "#5998D0", "#F3CB3D", "#E14646", "#7C75D4", "#7FC057", "#BF87D9"];
