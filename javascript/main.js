@@ -1,26 +1,35 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const hamburger = document.getElementById('hamburger');
-  const menu = document.getElementById('menu');
+const loginBtn = document.getElementById("loginBtn");
+const loginContent = document.getElementById("loginContent");
+const nameInput = document.getElementById('nameInput');
+const userName = document.getElementById('userName');
 
-  if (!hamburger || !menu) return;
-
-  hamburger.addEventListener('click', (e) => {
-    e.stopPropagation();
-    menu.classList.remove('hidden');
-  });
-
-  menu.addEventListener('click', (e) => {
-    if (e.target === menu) {
-      menu.classList.add('hidden');
-    }
-  });
-
-  document.addEventListener('click', (e) => {
-    if (!hamburger.contains(e.target) && !menu.contains(e.target)) {
-      menu.classList.add('hidden');
-    }
-  });
+loginBtn.addEventListener('click', () => {
+  loginContent.classList.toggle('active');
+  if (loginContent.classList.contains('active')) {
+    nameInput.focus(); 
+  }
 });
+
+nameInput.addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') {
+    const inputValue = nameInput.value.trim();
+    
+    if (inputValue !== '') {
+      userName.textContent = inputValue;
+      
+      loginContent.classList.remove('active');
+      
+      nameInput.value = '';
+    }
+  }
+});
+
+document.addEventListener('click', (e) => {
+  if (!loginBtn.contains(e.target) && !loginContent.contains(e.target)) {
+    loginContent.classList.remove('active');
+  }
+});
+
 // Navbar Log End
 
 
